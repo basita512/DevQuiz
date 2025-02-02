@@ -1,965 +1,964 @@
 {
-    "questions": [
-      {
-        "id": 1,
-        "question": "What does the 'defer' attribute do in a script tag?",
-        "options": [
-          "Delays script execution until the page is fully loaded",
-          "Executes script immediately",
-          "Loads script in parallel and executes it after parsing HTML",
-          "Preloads the script but does not execute it"
-        ],
-        "correctAnswer": "Loads script in parallel and executes it after parsing HTML",
-        "explanation": "The 'defer' attribute ensures the script loads asynchronously but executes only after the HTML document has been parsed."
-      },
-      {
-        "id": 2,
-        "question": "Which CSS property is used to control the stacking order of elements?",
-        "options": [
-          "z-index",
-          "position",
-          "display",
-          "float"
-        ],
-        "correctAnswer": "z-index",
-        "explanation": "The 'z-index' property specifies the stack order of an element. Elements with a higher z-index are displayed in front of elements with a lower z-index."
-      },
-      {
-        "id": 3,
-        "question": "In React, what is the purpose of the 'key' prop?",
-        "options": [
-          "To uniquely identify elements in a list",
-          "To define the component's state",
-          "To control the component's lifecycle",
-          "To pass data between components"
-        ],
-        "correctAnswer": "To uniquely identify elements in a list",
-        "explanation": "The 'key' prop helps React identify which items have changed, are added, or are removed in a list, ensuring efficient updates."
-      },
-      {
-        "id": 4,
-        "question": "What is the output of the following JavaScript code? console.log(typeof null);",
-        "options": [
-          "object",
-          "null",
-          "undefined",
-          "string"
-        ],
-        "correctAnswer": "object",
-        "explanation": "In JavaScript, the 'typeof null' returns 'object', which is a historical bug in the language."
-      },
-      {
-        "id": 5,
-        "question": "Which TypeScript feature allows you to define a variable that can hold multiple types?",
-        "options": [
-          "Union Types",
-          "Generics",
-          "Interfaces",
-          "Enums"
-        ],
-        "correctAnswer": "Union Types",
-        "explanation": "Union Types allow a variable to hold values of multiple types, defined using the pipe (|) operator."
-      },
-      {
-        "id": 6,
-        "question": "What is the purpose of Redux in a React application?",
-        "options": [
-          "To manage global state",
-          "To handle routing",
-          "To style components",
-          "To fetch data from APIs"
-        ],
-        "correctAnswer": "To manage global state",
-        "explanation": "Redux is a state management library used to manage the global state of a React application in a predictable way."
-      },
-      {
-        "id": 7,
-        "question": "Which Tailwind CSS class is used to add padding on all sides of an element?",
-        "options": [
-          "p-4",
-          "px-4",
-          "py-4",
-          "pt-4"
-        ],
-        "correctAnswer": "p-4",
-        "explanation": "The 'p-4' class in Tailwind CSS adds padding of 1rem (16px) on all sides of an element."
-      },
-      {
-        "id": 8,
-        "question": "What does the 'alt' attribute in an HTML image tag do?",
-        "options": [
-          "Provides alternative text for screen readers",
-          "Specifies the image source",
-          "Defines the image width",
-          "Sets the image alignment"
-        ],
-        "correctAnswer": "Provides alternative text for screen readers",
-        "explanation": "The 'alt' attribute provides alternative text for an image, which is used by screen readers and displayed if the image fails to load."
-      },
-      {
-        "id": 9,
-        "question": "Which CSS property is used to create space between the content and the border of an element?",
-        "options": [
-          "padding",
-          "margin",
-          "border-spacing",
-          "outline"
-        ],
-        "correctAnswer": "padding",
-        "explanation": "The 'padding' property creates space between the content of an element and its border."
-      },
-      {
-        "id": 10,
-        "question": "What is the purpose of the 'useEffect' hook in React?",
-        "options": [
-          "To perform side effects in functional components",
-          "To manage component state",
-          "To create reusable logic",
-          "To handle routing"
-        ],
-        "correctAnswer": "To perform side effects in functional components",
-        "explanation": "The 'useEffect' hook allows you to perform side effects, such as data fetching or DOM manipulation, in functional components."
-      },
-      {
-        "id": 11,
-        "question": "What is the output of the following JavaScript code? console.log(0 == '0');",
-        "options": [
-          "true",
-          "false",
-          "undefined",
-          "null"
-        ],
-        "correctAnswer": "true",
-        "explanation": "In JavaScript, the '==' operator performs type coercion, so '0' is coerced to 0, making the comparison true."
-      },
-      {
-        "id": 12,
-        "question": "Which TypeScript type is used to represent a function that returns nothing?",
-        "options": [
-          "void",
-          "null",
-          "undefined",
-          "never"
-        ],
-        "correctAnswer": "void",
-        "explanation": "The 'void' type in TypeScript is used to represent a function that does not return any value."
-      },
-      {
-        "id": 13,
-        "question": "What is the purpose of the 'combineReducers' function in Redux?",
-        "options": [
-          "To combine multiple reducers into a single root reducer",
-          "To create a new state object",
-          "To dispatch actions to the store",
-          "To connect React components to the Redux store"
-        ],
-        "correctAnswer": "To combine multiple reducers into a single root reducer",
-        "explanation": "The 'combineReducers' function is used to combine multiple reducers into a single root reducer for the Redux store."
-      },
-      {
-        "id": 14,
-        "question": "Which Tailwind CSS class is used to center an element horizontally?",
-        "options": [
-          "mx-auto",
-          "text-center",
-          "flex justify-center",
-          "block"
-        ],
-        "correctAnswer": "mx-auto",
-        "explanation": "The 'mx-auto' class in Tailwind CSS centers an element horizontally by setting equal margins on both sides."
-      },
-      {
-        "id": 15,
-        "question": "What is the purpose of the 'async' keyword in JavaScript?",
-        "options": [
-          "To define an asynchronous function",
-          "To pause function execution",
-          "To handle errors in promises",
-          "To create a new thread"
-        ],
-        "correctAnswer": "To define an asynchronous function",
-        "explanation": "The 'async' keyword is used to define an asynchronous function, which automatically returns a promise."
-      },
-      {
-        "id": 16,
-        "question": "Which HTML tag is used to define a table row?",
-        "options": [
-          "<tr>",
-          "<td>",
-          "<th>",
-          "<table>"
-        ],
-        "correctAnswer": "<tr>",
-        "explanation": "The '<tr>' tag is used to define a table row in HTML."
-      },
-      {
-        "id": 17,
-        "question": "What does the 'flex-grow' CSS property do?",
-        "options": [
-          "Specifies how much a flex item should grow relative to others",
-          "Defines the initial size of a flex item",
-          "Controls the direction of the flex container",
-          "Aligns items along the cross axis"
-        ],
-        "correctAnswer": "Specifies how much a flex item should grow relative to others",
-        "explanation": "The 'flex-grow' property determines how much a flex item will grow relative to other items in the container."
-      },
-      {
-        "id": 18,
-        "question": "What is the purpose of the 'useState' hook in React?",
-        "options": [
-          "To add state to functional components",
-          "To manage side effects",
-          "To create context",
-          "To handle routing"
-        ],
-        "correctAnswer": "To add state to functional components",
-        "explanation": "The 'useState' hook allows you to add state to functional components in React."
-      },
-      {
-        "id": 19,
-        "question": "What is the output of the following JavaScript code? console.log([] + []);",
-        "options": [
-          "''",
-          "[]",
-          "undefined",
-          "NaN"
-        ],
-        "correctAnswer": "''",
-        "explanation": "In JavaScript, adding two empty arrays results in an empty string due to type coercion."
-      },
-      {
-        "id": 20,
-        "question": "Which TypeScript feature allows you to define a type based on another type?",
-        "options": [
-          "Type Aliases",
-          "Generics",
-          "Interfaces",
-          "Enums"
-        ],
-        "correctAnswer": "Type Aliases",
-        "explanation": "Type Aliases in TypeScript allow you to create a new name for a type, which can be based on existing types."
-      },
-      {
-        "id": 21,
-        "question": "What is the purpose of the 'aria-label' attribute in HTML?",
-        "options": [
-          "To provide an accessible name for an element",
-          "To define a label for a form input",
-          "To link an element to a CSS file",
-          "To specify the language of the content"
-        ],
-        "correctAnswer": "To provide an accessible name for an element",
-        "explanation": "The 'aria-label' attribute is used to provide an accessible name for an element when no visible label is present."
-      },
-      {
-        "id": 22,
-        "question": "Which CSS property is used to create a smooth transition between two states?",
-        "options": [
-          "transition",
-          "animation",
-          "transform",
-          "keyframes"
-        ],
-        "correctAnswer": "transition",
-        "explanation": "The 'transition' property is used to create smooth transitions between two states of an element."
-      },
-      {
-        "id": 23,
-        "question": "What is the purpose of the 'useReducer' hook in React?",
-        "options": [
-          "To manage complex state logic",
-          "To handle side effects",
-          "To create reusable components",
-          "To fetch data from an API"
-        ],
-        "correctAnswer": "To manage complex state logic",
-        "explanation": "The 'useReducer' hook is used to manage complex state logic in React, similar to how Redux works."
-      },
-      {
-        "id": 24,
-        "question": "What is the output of the following JavaScript code? console.log(typeof NaN);",
-        "options": [
-          "number",
-          "NaN",
-          "undefined",
-          "string"
-        ],
-        "correctAnswer": "number",
-        "explanation": "In JavaScript, 'NaN' is considered a numeric value, so 'typeof NaN' returns 'number'."
-      },
-      {
-        "id": 25,
-        "question": "Which TypeScript type is used to represent a value that could be of multiple types?",
-        "options": [
-          "Union Types",
-          "Any",
-          "Unknown",
-          "Never"
-        ],
-        "correctAnswer": "Union Types",
-        "explanation": "Union Types allow a variable to hold values of multiple types, defined using the pipe (|) operator."
-      },
-      {
-        "id": 26,
-        "question": "What is the purpose of the 'Provider' component in Redux?",
-        "options": [
-          "To make the Redux store available to the React component tree",
-          "To dispatch actions to the store",
-          "To combine multiple reducers",
-          "To create a new state object"
-        ],
-        "correctAnswer": "To make the Redux store available to the React component tree",
-        "explanation": "The 'Provider' component makes the Redux store available to all components in the React tree."
-      },
-      {
-        "id": 27,
-        "question": "Which Tailwind CSS class is used to add a drop shadow to an element?",
-        "options": [
-          "shadow",
-          "drop-shadow",
-          "box-shadow",
-          "filter"
-        ],
-        "correctAnswer": "shadow",
-        "explanation": "The 'shadow' class in Tailwind CSS is used to add a drop shadow to an element."
-      },
-      {
-        "id": 28,
-        "question": "What is the purpose of the 'async' attribute in a script tag?",
-        "options": [
-          "To load the script asynchronously",
-          "To defer script execution",
-          "To preload the script",
-          "To execute the script immediately"
-        ],
-        "correctAnswer": "To load the script asynchronously",
-        "explanation": "The 'async' attribute allows the script to load asynchronously without blocking the HTML parsing."
-      },
-      {
-        "id": 29,
-        "question": "Which CSS property is used to control the visibility of an element without removing it from the document flow?",
-        "options": [
-          "visibility",
-          "display",
-          "opacity",
-          "position"
-        ],
-        "correctAnswer": "visibility",
-        "explanation": "The 'visibility' property hides an element without removing it from the document flow."
-      },
-      {
-        "id": 30,
-        "question": "What is the purpose of the 'useContext' hook in React?",
-        "options": [
-          "To access context values in functional components",
-          "To manage state in functional components",
-          "To handle side effects",
-          "To create reusable logic"
-        ],
-        "correctAnswer": "To access context values in functional components",
-        "explanation": "The 'useContext' hook allows functional components to access values from a React context."
-      },
-      {
-        "id": 31,
-        "question": "What is the output of the following JavaScript code? console.log(1 + '2' + 3);",
-        "options": [
-          "'123'",
-          "6",
-          "'15'",
-          "NaN"
-        ],
-        "correctAnswer": "'123'",
-        "explanation": "In JavaScript, the '+' operator concatenates strings, so '1' + '2' results in '12', and '12' + '3' results in '123'."
-      },
-      {
-        "id": 32,
-        "question": "Which TypeScript feature allows you to define a type that represents a fixed set of values?",
-        "options": [
-          "Enums",
-          "Union Types",
-          "Interfaces",
-          "Generics"
-        ],
-        "correctAnswer": "Enums",
-        "explanation": "Enums in TypeScript allow you to define a type that represents a fixed set of named values."
-      },
-      {
-        "id": 33,
-        "question": "What is the purpose of the 'mapStateToProps' function in Redux?",
-        "options": [
-          "To map Redux state to component props",
-          "To dispatch actions to the store",
-          "To combine reducers",
-          "To create a new state object"
-        ],
-        "correctAnswer": "To map Redux state to component props",
-        "explanation": "The 'mapStateToProps' function is used to map the Redux state to the props of a React component."
-      },
-      {
-        "id": 34,
-        "question": "Which Tailwind CSS class is used to add rounded corners to an element?",
-        "options": [
-          "rounded",
-          "border-radius",
-          "corner-radius",
-          "round"
-        ],
-        "correctAnswer": "rounded",
-        "explanation": "The 'rounded' class in Tailwind CSS is used to add rounded corners to an element."
-      },
-      {
-        "id": 35,
-        "question": "What is the purpose of the 'Promise.all' method in JavaScript?",
-        "options": [
-          "To execute multiple promises in parallel and wait for all to resolve",
-          "To handle errors in promises",
-          "To create a new promise",
-          "To chain multiple promises"
-        ],
-        "correctAnswer": "To execute multiple promises in parallel and wait for all to resolve",
-        "explanation": "The 'Promise.all' method executes multiple promises in parallel and returns a single promise that resolves when all input promises have resolved."
-      },
-      {
-        "id": 36,
-        "question": "Which HTML tag is used to define a hyperlink?",
-        "options": [
-          "<a>",
-          "<link>",
-          "<href>",
-          "<url>"
-        ],
-        "correctAnswer": "<a>",
-        "explanation": "The '<a>' tag is used to define a hyperlink in HTML."
-      },
-      {
-        "id": 37,
-        "question": "What does the 'flex-shrink' CSS property do?",
-        "options": [
-          "Specifies how much a flex item should shrink relative to others",
-          "Defines the initial size of a flex item",
-          "Controls the direction of the flex container",
-          "Aligns items along the cross axis"
-        ],
-        "correctAnswer": "Specifies how much a flex item should shrink relative to others",
-        "explanation": "The 'flex-shrink' property determines how much a flex item will shrink relative to other items in the container."
-      },
-      {
-        "id": 38,
-        "question": "What is the purpose of the 'useMemo' hook in React?",
-        "options": [
-          "To memoize expensive calculations",
-          "To manage state in functional components",
-          "To handle side effects",
-          "To create reusable logic"
-        ],
-        "correctAnswer": "To memoize expensive calculations",
-        "explanation": "The 'useMemo' hook is used to memoize expensive calculations and optimize performance."
-      },
-      {
-        "id": 39,
-        "question": "What is the output of the following JavaScript code? console.log(typeof undefined);",
-        "options": [
-          "undefined",
-          "null",
-          "object",
-          "string"
-        ],
-        "correctAnswer": "undefined",
-        "explanation": "The 'typeof undefined' returns 'undefined' in JavaScript."
-      },
-      {
-        "id": 40,
-        "question": "Which TypeScript feature allows you to define a type that represents a function signature?",
-        "options": [
-          "Function Types",
-          "Interfaces",
-          "Generics",
-          "Enums"
-        ],
-        "correctAnswer": "Function Types",
-        "explanation": "Function Types in TypeScript allow you to define a type that represents a function signature."
-      },
-      {
-        "id": 41,
-        "question": "What is the purpose of the 'aria-labelledby' attribute in HTML?",
-        "options": [
-          "To associate an element with a label",
-          "To define a label for a form input",
-          "To link an element to a CSS file",
-          "To specify the language of the content"
-        ],
-        "correctAnswer": "To associate an element with a label",
-        "explanation": "The 'aria-labelledby' attribute is used to associate an element with a label, improving accessibility."
-      },
-      {
-        "id": 42,
-        "question": "Which CSS property is used to create a gradient background?",
-        "options": [
-          "background-image",
-          "gradient",
-          "background-color",
-          "linear-gradient"
-        ],
-        "correctAnswer": "background-image",
-        "explanation": "The 'background-image' property is used to create gradient backgrounds using functions like 'linear-gradient'."
-      },
-      {
-        "id": 43,
-        "question": "What is the purpose of the 'useCallback' hook in React?",
-        "options": [
-          "To memoize callback functions",
-          "To manage state in functional components",
-          "To handle side effects",
-          "To create reusable logic"
-        ],
-        "correctAnswer": "To memoize callback functions",
-        "explanation": "The 'useCallback' hook is used to memoize callback functions, preventing unnecessary re-renders."
-      },
-      {
-        "id": 44,
-        "question": "What is the output of the following JavaScript code? console.log([] == ![]);",
-        "options": [
-          "true",
-          "false",
-          "undefined",
-          "NaN"
-        ],
-        "correctAnswer": "true",
-        "explanation": "In JavaScript, the '==' operator performs type coercion, and '[] == ![]' evaluates to 'true' due to the way coercion works."
-      },
-      {
-        "id": 45,
-        "question": "Which TypeScript type is used to represent a value that could be of any type?",
-        "options": [
-          "any",
-          "unknown",
-          "void",
-          "never"
-        ],
-        "correctAnswer": "any",
-        "explanation": "The 'any' type in TypeScript allows a variable to hold values of any type, disabling type checking."
-      },
-      {
-        "id": 46,
-        "question": "What is the purpose of the 'connect' function in Redux?",
-        "options": [
-          "To connect a React component to the Redux store",
-          "To dispatch actions to the store",
-          "To combine reducers",
-          "To create a new state object"
-        ],
-        "correctAnswer": "To connect a React component to the Redux store",
-        "explanation": "The 'connect' function is used to connect a React component to the Redux store, allowing it to access state and dispatch actions."
-      },
-      {
-        "id": 47,
-        "question": "Which Tailwind CSS class is used to add a hover effect to an element?",
-        "options": [
-          "hover:",
-          "active:",
-          "focus:",
-          "group-hover:"
-        ],
-        "correctAnswer": "hover:",
-        "explanation": "The 'hover:' prefix in Tailwind CSS is used to apply styles when an element is hovered over."
-      },
-      {
-        "id": 48,
-        "question": "What is the purpose of the 'crossorigin' attribute in a script tag?",
-        "options": [
-          "To enable CORS for the script",
-          "To defer script execution",
-          "To preload the script",
-          "To execute the script immediately"
-        ],
-        "correctAnswer": "To enable CORS for the script",
-        "explanation": "The 'crossorigin' attribute is used to enable Cross-Origin Resource Sharing (CORS) for the script."
-      },
-      {
-        "id": 49,
-        "question": "Which CSS property is used to control the order of flex items?",
-        "options": [
-          "order",
-          "flex-order",
-          "flex-direction",
-          "align-items"
-        ],
-        "correctAnswer": "order",
-        "explanation": "The 'order' property is used to control the order in which flex items appear within a flex container."
-      },
-      {
-        "id": 50,
-        "question": "What is the purpose of the 'useRef' hook in React?",
-        "options": [
-          "To persist values across renders without causing re-renders",
-          "To manage state in functional components",
-          "To handle side effects",
-          "To create reusable logic"
-        ],
-        "correctAnswer": "To persist values across renders without causing re-renders",
-        "explanation": "The 'useRef' hook is used to persist values across renders without triggering re-renders."
-      },
-      {
-        "id": 51,
-        "question": "What is the output of the following JavaScript code? console.log(typeof []);",
-        "options": [
-          "object",
-          "array",
-          "undefined",
-          "string"
-        ],
-        "correctAnswer": "object",
-        "explanation": "In JavaScript, arrays are a type of object, so 'typeof []' returns 'object'."
-      },
-      {
-        "id": 52,
-        "question": "Which TypeScript feature allows you to define a type that represents a function with specific parameters and return type?",
-        "options": [
-          "Function Types",
-          "Interfaces",
-          "Generics",
-          "Enums"
-        ],
-        "correctAnswer": "Function Types",
-        "explanation": "Function Types in TypeScript allow you to define a type that represents a function with specific parameters and return type."
-      },
-      {
-        "id": 53,
-        "question": "What is the purpose of the 'mapDispatchToProps' function in Redux?",
-        "options": [
-          "To map dispatch actions to component props",
-          "To map state to component props",
-          "To combine reducers",
-          "To create a new state object"
-        ],
-        "correctAnswer": "To map dispatch actions to component props",
-        "explanation": "The 'mapDispatchToProps' function is used to map dispatch actions to the props of a React component."
-      },
-      {
-        "id": 54,
-        "question": "Which Tailwind CSS class is used to add a border to an element?",
-        "options": [
-          "border",
-          "outline",
-          "border-width",
-          "border-style"
-        ],
-        "correctAnswer": "border",
-        "explanation": "The 'border' class in Tailwind CSS is used to add a border to an element."
-      },
-      {
-        "id": 55,
-        "question": "What is the purpose of the 'Promise.race' method in JavaScript?",
-        "options": [
-          "To execute multiple promises and resolve with the first one that resolves or rejects",
-          "To handle errors in promises",
-          "To create a new promise",
-          "To chain multiple promises"
-        ],
-        "correctAnswer": "To execute multiple promises and resolve with the first one that resolves or rejects",
-        "explanation": "The 'Promise.race' method executes multiple promises and resolves or rejects as soon as the first promise resolves or rejects."
-      },
-      {
-        "id": 56,
-        "question": "Which HTML tag is used to define a table header?",
-        "options": [
-          "<th>",
-          "<td>",
-          "<tr>",
-          "<thead>"
-        ],
-        "correctAnswer": "<th>",
-        "explanation": "The '<th>' tag is used to define a table header in HTML."
-      },
-      {
-        "id": 57,
-        "question": "What does the 'flex-basis' CSS property do?",
-        "options": [
-          "Defines the initial size of a flex item",
-          "Specifies how much a flex item should grow",
-          "Controls the direction of the flex container",
-          "Aligns items along the cross axis"
-        ],
-        "correctAnswer": "Defines the initial size of a flex item",
-        "explanation": "The 'flex-basis' property defines the initial size of a flex item before any remaining space is distributed."
-      },
-      {
-        "id": 58,
-        "question": "What is the purpose of the 'useLayoutEffect' hook in React?",
-        "options": [
-          "To perform side effects after the DOM has been updated",
-          "To manage state in functional components",
-          "To handle side effects",
-          "To create reusable logic"
-        ],
-        "correctAnswer": "To perform side effects after the DOM has been updated",
-        "explanation": "The 'useLayoutEffect' hook is used to perform side effects after the DOM has been updated but before the browser paints."
-      },
-      {
-        "id": 59,
-        "question": "What is the output of the following JavaScript code? console.log(typeof null);",
-        "options": [
-          "object",
-          "null",
-          "undefined",
-          "string"
-        ],
-        "correctAnswer": "object",
-        "explanation": "In JavaScript, 'typeof null' returns 'object', which is a historical bug in the language."
-      },
-      {
-        "id": 60,
-        "question": "Which TypeScript feature allows you to define a type that represents an object with specific properties?",
-        "options": [
-          "Interfaces",
-          "Union Types",
-          "Generics",
-          "Enums"
-        ],
-        "correctAnswer": "Interfaces",
-        "explanation": "Interfaces in TypeScript allow you to define a type that represents an object with specific properties."
-      },
-      {
-        "id": 61,
-        "question": "What is the purpose of the 'aria-describedby' attribute in HTML?",
-        "options": [
-          "To provide additional descriptive information for an element",
-          "To define a label for a form input",
-          "To link an element to a CSS file",
-          "To specify the language of the content"
-        ],
-        "correctAnswer": "To provide additional descriptive information for an element",
-        "explanation": "The 'aria-describedby' attribute is used to provide additional descriptive information for an element, improving accessibility."
-      },
-      {
-        "id": 62,
-        "question": "Which CSS property is used to create a radial gradient background?",
-        "options": [
-          "background-image",
-          "radial-gradient",
-          "background-color",
-          "linear-gradient"
-        ],
-        "correctAnswer": "background-image",
-        "explanation": "The 'background-image' property is used to create radial gradient backgrounds using the 'radial-gradient' function."
-      },
-      {
-        "id": 63,
-        "question": "What is the purpose of the 'useImperativeHandle' hook in React?",
-        "options": [
-          "To customize the instance value exposed to parent components",
-          "To manage state in functional components",
-          "To handle side effects",
-          "To create reusable logic"
-        ],
-        "correctAnswer": "To customize the instance value exposed to parent components",
-        "explanation": "The 'useImperativeHandle' hook is used to customize the instance value exposed to parent components when using 'ref'."
-      },
-      {
-        "id": 64,
-        "question": "What is the output of the following JavaScript code? console.log(typeof {});",
-        "options": [
-          "object",
-          "undefined",
-          "null",
-          "string"
-        ],
-        "correctAnswer": "object",
-        "explanation": "In JavaScript, 'typeof {}' returns 'object' because objects are of the 'object' type."
-      },
-      {
-        "id": 65,
-        "question": "Which TypeScript type is used to represent a value that could be of any type but is safer than 'any'?",
-        "options": [
-          "unknown",
-          "any",
-          "void",
-          "never"
-        ],
-        "correctAnswer": "unknown",
-        "explanation": "The 'unknown' type in TypeScript is a safer alternative to 'any' because it requires type checking before use."
-      },
-      {
-        "id": 66,
-        "question": "What is the purpose of the 'createSlice' function in Redux Toolkit?",
-        "options": [
-          "To create a slice of the Redux store with reducers and actions",
-          "To dispatch actions to the store",
-          "To combine reducers",
-          "To create a new state object"
-        ],
-        "correctAnswer": "To create a slice of the Redux store with reducers and actions",
-        "explanation": "The 'createSlice' function in Redux Toolkit is used to create a slice of the Redux store, including reducers and actions."
-      },
-      {
-        "id": 67,
-        "question": "Which Tailwind CSS class is used to add a focus effect to an element?",
-        "options": [
-          "focus:",
-          "hover:",
-          "active:",
-          "group-focus:"
-        ],
-        "correctAnswer": "focus:",
-        "explanation": "The 'focus:' prefix in Tailwind CSS is used to apply styles when an element is focused."
-      },
-      {
-        "id": 68,
-        "question": "What is the purpose of the 'integrity' attribute in a script tag?",
-        "options": [
-          "To ensure the script's integrity using a hash",
-          "To defer script execution",
-          "To preload the script",
-          "To execute the script immediately"
-        ],
-        "correctAnswer": "To ensure the script's integrity using a hash",
-        "explanation": "The 'integrity' attribute is used to ensure the script's integrity by verifying its content against a cryptographic hash."
-      },
-      {
-        "id": 69,
-        "question": "Which CSS property is used to control the alignment of items along the cross axis in a flex container?",
-        "options": [
-          "align-items",
-          "justify-content",
-          "align-content",
-          "flex-direction"
-        ],
-        "correctAnswer": "align-items",
-        "explanation": "The 'align-items' property is used to control the alignment of items along the cross axis in a flex container."
-      },
-      {
-        "id": 70,
-        "question": "What is the purpose of the 'useDebugValue' hook in React?",
-        "options": [
-          "To display a label for custom hooks in React DevTools",
-          "To manage state in functional components",
-          "To handle side effects",
-          "To create reusable logic"
-        ],
-        "correctAnswer": "To display a label for custom hooks in React DevTools",
-        "explanation": "The 'useDebugValue' hook is used to display a label for custom hooks in React DevTools."
-      },
-      {
-        "id": 71,
-        "question": "What is the output of the following JavaScript code? console.log(typeof function() {});",
-        "options": [
-          "function",
-          "object",
-          "undefined",
-          "string"
-        ],
-        "correctAnswer": "function",
-        "explanation": "In JavaScript, 'typeof function() {}' returns 'function' because functions are of the 'function' type."
-      },
-      {
-        "id": 72,
-        "question": "Which TypeScript feature allows you to define a type that represents an array of a specific type?",
-        "options": [
-          "Array Types",
-          "Interfaces",
-          "Generics",
-          "Enums"
-        ],
-        "correctAnswer": "Array Types",
-        "explanation": "Array Types in TypeScript allow you to define a type that represents an array of a specific type, e.g., 'number[]'."
-      },
-      {
-        "id": 73,
-        "question": "What is the purpose of the 'createAsyncThunk' function in Redux Toolkit?",
-        "options": [
-          "To handle asynchronous actions in Redux",
-          "To dispatch actions to the store",
-          "To combine reducers",
-          "To create a new state object"
-        ],
-        "correctAnswer": "To handle asynchronous actions in Redux",
-        "explanation": "The 'createAsyncThunk' function in Redux Toolkit is used to handle asynchronous actions, such as API calls."
-      },
-      {
-        "id": 74,
-        "question": "Which Tailwind CSS class is used to add a transition effect to an element?",
-        "options": [
-          "transition",
-          "animate",
-          "transform",
-          "duration"
-        ],
-        "correctAnswer": "transition",
-        "explanation": "The 'transition' class in Tailwind CSS is used to add a transition effect to an element."
-      },
-      {
-        "id": 75,
-        "question": "What is the purpose of the 'Promise.finally' method in JavaScript?",
-        "options": [
-          "To execute code after a promise is settled (resolved or rejected)",
-          "To handle errors in promises",
-          "To create a new promise",
-          "To chain multiple promises"
-        ],
-        "correctAnswer": "To execute code after a promise is settled (resolved or rejected)",
-        "explanation": "The 'Promise.finally' method is used to execute code after a promise is settled, regardless of whether it was resolved or rejected."
-      },
-      {
-        "id": 76,
-        "question": "Which HTML tag is used to define a table footer?",
-        "options": [
-          "<tfoot>",
-          "<td>",
-          "<tr>",
-          "<thead>"
-        ],
-        "correctAnswer": "<tfoot>",
-        "explanation": "The '<tfoot>' tag is used to define a table footer in HTML."
-      },
-      {
-        "id": 77,
-        "question": "What does the 'flex-wrap' CSS property do?",
-        "options": [
-          "Controls whether flex items are forced onto one line or can wrap onto multiple lines",
-          "Specifies how much a flex item should grow",
-          "Controls the direction of the flex container",
-          "Aligns items along the cross axis"
-        ],
-        "correctAnswer": "Controls whether flex items are forced onto one line or can wrap onto multiple lines",
-        "explanation": "The 'flex-wrap' property controls whether flex items are forced onto one line or can wrap onto multiple lines."
-      },
-      {
-        "id": 78,
-        "question": "What is the purpose of the 'useTransition' hook in React?",
-        "options": [
-          "To mark some state updates as non-urgent",
-          "To manage state in functional components",
-          "To handle side effects",
-          "To create reusable logic"
-        ],
-        "correctAnswer": "To mark some state updates as non-urgent",
-        "explanation": "The 'useTransition' hook is used to mark some state updates as non-urgent, allowing higher-priority updates to occur first."
-      },
-      {
-        "id": 79,
-        "question": "What is the output of the following JavaScript code? console.log(typeof NaN);",
-        "options": [
-          "number",
-          "NaN",
-          "undefined",
-          "string"
-        ],
-        "correctAnswer": "number",
-        "explanation": "In JavaScript, 'NaN' is considered a numeric value, so 'typeof NaN' returns 'number'."
-      },
-      {
-        "id": 80,
-        "question": "Which TypeScript feature allows you to define a type that represents a tuple?",
-        "options": [
-          "Tuple Types",
-          "Interfaces",
-          "Generics",
-          "Enums"
-        ],
-        "correctAnswer": "Tuple Types",
-        "explanation": "Tuple Types in TypeScript allow you to define a type that represents an array with a fixed number of elements of specific types."
-      }
-      
-    ]
-  }
+  "questions": [
+    {
+      "id": 1,
+      "question": "What does the 'defer' attribute do in a script tag?",
+      "options": [
+        "Delays script execution until the page is fully loaded",
+        "Preloads the script but does not execute it",
+        "Loads script in parallel and executes it after parsing HTML",
+        "Executes script immediately"
+      ],
+      "correctAnswer": "Loads script in parallel and executes it after parsing HTML",
+      "explanation": "The 'defer' attribute ensures the script loads asynchronously but executes only after the HTML document has been parsed."
+    },
+    {
+      "id": 2,
+      "question": "Which CSS property is used to control the stacking order of elements?",
+      "options": [
+        "position",
+        "float",
+        "display",
+        "z-index"
+      ],
+      "correctAnswer": "z-index",
+      "explanation": "The 'z-index' property specifies the stack order of an element. Elements with a higher z-index are displayed in front of elements with a lower z-index."
+    },
+    {
+      "id": 3,
+      "question": "In React, what is the purpose of the 'key' prop?",
+      "options": [
+        "To pass data between components",
+        "To control the component's lifecycle",
+        "To uniquely identify elements in a list",
+        "To define the component's state"
+      ],
+      "correctAnswer": "To uniquely identify elements in a list",
+      "explanation": "The 'key' prop helps React identify which items have changed, are added, or are removed in a list, ensuring efficient updates."
+    },
+    {
+      "id": 4,
+      "question": "What is the output of the following JavaScript code? console.log(typeof null);",
+      "options": [
+        "undefined",
+        "null",
+        "string",
+        "object"
+      ],
+      "correctAnswer": "object",
+      "explanation": "In JavaScript, the 'typeof null' returns 'object', which is a historical bug in the language."
+    },
+    {
+      "id": 5,
+      "question": "Which TypeScript feature allows you to define a variable that can hold multiple types?",
+      "options": [
+        "Interfaces",
+        "Generics",
+        "Enums",
+        "Union Types"
+      ],
+      "correctAnswer": "Union Types",
+      "explanation": "Union Types allow a variable to hold values of multiple types, defined using the pipe (|) operator."
+    },
+    {
+      "id": 6,
+      "question": "What is the purpose of Redux in a React application?",
+      "options": [
+        "To handle routing",
+        "To fetch data from APIs",
+        "To manage global state",
+        "To style components"
+      ],
+      "correctAnswer": "To manage global state",
+      "explanation": "Redux is a state management library used to manage the global state of a React application in a predictable way."
+    },
+    {
+      "id": 7,
+      "question": "Which Tailwind CSS class is used to add padding on all sides of an element?",
+      "options": [
+        "py-4",
+        "px-4",
+        "p-4",
+        "pt-4"
+      ],
+      "correctAnswer": "p-4",
+      "explanation": "The 'p-4' class in Tailwind CSS adds padding of 1rem (16px) on all sides of an element."
+    },
+    {
+      "id": 8,
+      "question": "What does the 'alt' attribute in an HTML image tag do?",
+      "options": [
+        "Sets the image alignment",
+        "Provides alternative text for screen readers",
+        "Defines the image width",
+        "Specifies the image source"
+      ],
+      "correctAnswer": "Provides alternative text for screen readers",
+      "explanation": "The 'alt' attribute provides alternative text for an image, which is used by screen readers and displayed if the image fails to load."
+    },
+    {
+      "id": 9,
+      "question": "Which CSS property is used to create space between the content and the border of an element?",
+      "options": [
+        "margin",
+        "outline",
+        "padding",
+        "border-spacing"
+      ],
+      "correctAnswer": "padding",
+      "explanation": "The 'padding' property creates space between the content of an element and its border."
+    },
+    {
+      "id": 10,
+      "question": "What is the purpose of the 'useEffect' hook in React?",
+      "options": [
+        "To manage component state",
+        "To perform side effects in functional components",
+        "To handle routing",
+        "To create reusable logic"
+      ],
+      "correctAnswer": "To perform side effects in functional components",
+      "explanation": "The 'useEffect' hook allows you to perform side effects, such as data fetching or DOM manipulation, in functional components."
+    },
+    {
+      "id": 11,
+      "question": "What is the output of the following JavaScript code? console.log(0 == '0');",
+      "options": [
+        "null",
+        "undefined",
+        "false",
+        "true"
+      ],
+      "correctAnswer": "true",
+      "explanation": "In JavaScript, the '==' operator performs type coercion, so '0' is coerced to 0, making the comparison true."
+    },
+    {
+      "id": 12,
+      "question": "Which TypeScript type is used to represent a function that returns nothing?",
+      "options": [
+        "null",
+        "void",
+        "never",
+        "undefined"
+      ],
+      "correctAnswer": "void",
+      "explanation": "The 'void' type in TypeScript is used to represent a function that does not return any value."
+    },
+    {
+      "id": 13,
+      "question": "What is the purpose of the 'combineReducers' function in Redux?",
+      "options": [
+        "To dispatch actions to the store",
+        "To create a new state object",
+        "To connect React components to the Redux store",
+        "To combine multiple reducers into a single root reducer"
+      ],
+      "correctAnswer": "To combine multiple reducers into a single root reducer",
+      "explanation": "The 'combineReducers' function is used to combine multiple reducers into a single root reducer for the Redux store."
+    },
+    {
+      "id": 14,
+      "question": "Which Tailwind CSS class is used to center an element horizontally?",
+      "options": [
+        "mx-auto",
+        "flex justify-center",
+        "text-center",
+        "block"
+      ],
+      "correctAnswer": "mx-auto",
+      "explanation": "The 'mx-auto' class in Tailwind CSS centers an element horizontally by setting equal margins on both sides."
+    },
+    {
+      "id": 15,
+      "question": "What is the purpose of the 'async' keyword in JavaScript?",
+      "options": [
+        "To handle errors in promises",
+        "To define an asynchronous function",
+        "To pause function execution",
+        "To create a new thread"
+      ],
+      "correctAnswer": "To define an asynchronous function",
+      "explanation": "The 'async' keyword is used to define an asynchronous function, which automatically returns a promise."
+    },
+    {
+      "id": 16,
+      "question": "Which HTML tag is used to define a table row?",
+      "options": [
+        "<table>",
+        "<th>",
+        "<td>",
+        "<tr>"
+      ],
+      "correctAnswer": "<tr>",
+      "explanation": "The '<tr>' tag is used to define a table row in HTML."
+    },
+    {
+      "id": 17,
+      "question": "What does the 'flex-grow' CSS property do?",
+      "options": [
+        "Specifies how much a flex item should grow relative to others",
+        "Defines the initial size of a flex item",
+        "Aligns items along the cross axis",
+        "Controls the direction of the flex container"
+      ],
+      "correctAnswer": "Specifies how much a flex item should grow relative to others",
+      "explanation": "The 'flex-grow' property determines how much a flex item will grow relative to other items in the container."
+    },
+    {
+      "id": 18,
+      "question": "What is the purpose of the 'useState' hook in React?",
+      "options": [
+        "To handle routing",
+        "To manage side effects",
+        "To create context",
+        "To add state to functional components"
+      ],
+      "correctAnswer": "To add state to functional components",
+      "explanation": "The 'useState' hook allows you to add state to functional components in React."
+    },
+    {
+      "id": 19,
+      "question": "What is the output of the following JavaScript code? console.log([] + []);",
+      "options": [
+        "undefined",
+        "[]",
+        "NaN",
+        "''"
+      ],
+      "correctAnswer": "''",
+      "explanation": "In JavaScript, adding two empty arrays results in an empty string due to type coercion."
+    },
+    {
+      "id": 20,
+      "question": "Which TypeScript feature allows you to define a type based on another type?",
+      "options": [
+        "Generics",
+        "Interfaces",
+        "Enums",
+        "Type Aliases"
+      ],
+      "correctAnswer": "Type Aliases",
+      "explanation": "Type Aliases in TypeScript allow you to create a new name for a type, which can be based on existing types."
+    },
+    {
+      "id": 21,
+      "question": "What is the purpose of the 'aria-label' attribute in HTML?",
+      "options": [
+        "To specify the language of the content",
+        "To link an element to a CSS file",
+        "To provide an accessible name for an element",
+        "To define a label for a form input"
+      ],
+      "correctAnswer": "To provide an accessible name for an element",
+      "explanation": "The 'aria-label' attribute is used to provide an accessible name for an element when no visible label is present."
+    },
+    {
+      "id": 22,
+      "question": "Which CSS property is used to create a smooth transition between two states?",
+      "options": [
+        "transition",
+        "animation",
+        "transform",
+        "keyframes"
+      ],
+      "correctAnswer": "transition",
+      "explanation": "The 'transition' property is used to create smooth transitions between two states of an element."
+    },
+    {
+      "id": 23,
+      "question": "What is the purpose of the 'useReducer' hook in React?",
+      "options": [
+        "To create reusable components",
+        "To manage complex state logic",
+        "To fetch data from an API",
+        "To handle side effects"
+      ],
+      "correctAnswer": "To manage complex state logic",
+      "explanation": "The 'useReducer' hook is used to manage complex state logic in React, similar to how Redux works."
+    },
+    {
+      "id": 24,
+      "question": "What is the output of the following JavaScript code? console.log(typeof NaN);",
+      "options": [
+        "number",
+        "undefined",
+        "string",
+        "NaN"
+      ],
+      "correctAnswer": "number",
+      "explanation": "In JavaScript, 'NaN' is considered a numeric value, so 'typeof NaN' returns 'number'."
+    },
+    {
+      "id": 25,
+      "question": "Which TypeScript type is used to represent a value that could be of multiple types?",
+      "options": [
+        "Never",
+        "Union Types",
+        "Unknown",
+        "Any"
+      ],
+      "correctAnswer": "Union Types",
+      "explanation": "Union Types allow a variable to hold values of multiple types, defined using the pipe (|) operator."
+    },
+    {
+      "id": 26,
+      "question": "What is the purpose of the 'Provider' component in Redux?",
+      "options": [
+        "To make the Redux store available to the React component tree",
+        "To combine multiple reducers",
+        "To dispatch actions to the store",
+        "To create a new state object"
+      ],
+      "correctAnswer": "To make the Redux store available to the React component tree",
+      "explanation": "The 'Provider' component makes the Redux store available to all components in the React tree."
+    },
+    {
+      "id": 27,
+      "question": "Which Tailwind CSS class is used to add a drop shadow to an element?",
+      "options": [
+        "box-shadow",
+        "shadow",
+        "drop-shadow",
+        "filter"
+      ],
+      "correctAnswer": "shadow",
+      "explanation": "The 'shadow' class in Tailwind CSS is used to add a drop shadow to an element."
+    },
+    {
+      "id": 28,
+      "question": "What is the purpose of the 'async' attribute in a script tag?",
+      "options": [
+        "To defer script execution",
+        "To preload the script",
+        "To execute the script immediately",
+        "To load the script asynchronously"
+      ],
+      "correctAnswer": "To load the script asynchronously",
+      "explanation": "The 'async' attribute allows the script to load asynchronously without blocking the HTML parsing."
+    },
+    {
+      "id": 29,
+      "question": "Which CSS property is used to control the visibility of an element without removing it from the document flow?",
+      "options": [
+        "display",
+        "opacity",
+        "visibility",
+        "position"
+      ],
+      "correctAnswer": "visibility",
+      "explanation": "The 'visibility' property hides an element without removing it from the document flow."
+    },
+    {
+      "id": 30,
+      "question": "What is the purpose of the 'useContext' hook in React?",
+      "options": [
+        "To access context values in functional components",
+        "To handle side effects",
+        "To manage state in functional components",
+        "To create reusable logic"
+      ],
+      "correctAnswer": "To access context values in functional components",
+      "explanation": "The 'useContext' hook allows functional components to access values from a React context."
+    },
+    {
+      "id": 31,
+      "question": "What is the output of the following JavaScript code? console.log(1 + '2' + 3);",
+      "options": [
+        "'123'",
+        "NaN",
+        "6",
+        "'15'"
+      ],
+      "correctAnswer": "'123'",
+      "explanation": "In JavaScript, the '+' operator concatenates strings, so '1' + '2' results in '12', and '12' + '3' results in '123'."
+    },
+    {
+      "id": 32,
+      "question": "Which TypeScript feature allows you to define a type that represents a fixed set of values?",
+      "options": [
+        "Generics",
+        "Interfaces",
+        "Union Types",
+        "Enums"
+      ],
+      "correctAnswer": "Enums",
+      "explanation": "Enums in TypeScript allow you to define a type that represents a fixed set of named values."
+    },
+    {
+      "id": 33,
+      "question": "What is the purpose of the 'mapStateToProps' function in Redux?",
+      "options": [
+        "To map Redux state to component props",
+        "To combine reducers",
+        "To create a new state object",
+        "To dispatch actions to the store"
+      ],
+      "correctAnswer": "To map Redux state to component props",
+      "explanation": "The 'mapStateToProps' function is used to map the Redux state to the props of a React component."
+    },
+    {
+      "id": 34,
+      "question": "Which Tailwind CSS class is used to add rounded corners to an element?",
+      "options": [
+        "round",
+        "corner-radius",
+        "rounded",
+        "border-radius"
+      ],
+      "correctAnswer": "rounded",
+      "explanation": "The 'rounded' class in Tailwind CSS is used to add rounded corners to an element."
+    },
+    {
+      "id": 35,
+      "question": "What is the purpose of the 'Promise.all' method in JavaScript?",
+      "options": [
+        "To execute multiple promises in parallel and wait for all to resolve",
+        "To handle errors in promises",
+        "To chain multiple promises",
+        "To create a new promise"
+      ],
+      "correctAnswer": "To execute multiple promises in parallel and wait for all to resolve",
+      "explanation": "The 'Promise.all' method executes multiple promises in parallel and returns a single promise that resolves when all input promises have resolved."
+    },
+    {
+      "id": 36,
+      "question": "Which HTML tag is used to define a hyperlink?",
+      "options": [
+        "<a>",
+        "<url>",
+        "<href>",
+        "<link>"
+      ],
+      "correctAnswer": "<a>",
+      "explanation": "The '<a>' tag is used to define a hyperlink in HTML."
+    },
+    {
+      "id": 37,
+      "question": "What does the 'flex-shrink' CSS property do?",
+      "options": [
+        "Controls the direction of the flex container",
+        "Specifies how much a flex item should shrink relative to others",
+        "Defines the initial size of a flex item",
+        "Aligns items along the cross axis"
+      ],
+      "correctAnswer": "Specifies how much a flex item should shrink relative to others",
+      "explanation": "The 'flex-shrink' property determines how much a flex item will shrink relative to other items in the container."
+    },
+    {
+      "id": 38,
+      "question": "What is the purpose of the 'useMemo' hook in React?",
+      "options": [
+        "To manage state in functional components",
+        "To memoize expensive calculations",
+        "To handle side effects",
+        "To create reusable logic"
+      ],
+      "correctAnswer": "To memoize expensive calculations",
+      "explanation": "The 'useMemo' hook is used to memoize expensive calculations and optimize performance."
+    },
+    {
+      "id": 39,
+      "question": "What is the output of the following JavaScript code? console.log(typeof undefined);",
+      "options": [
+        "object",
+        "undefined",
+        "null",
+        "string"
+      ],
+      "correctAnswer": "undefined",
+      "explanation": "The 'typeof undefined' returns 'undefined' in JavaScript."
+    },
+    {
+      "id": 40,
+      "question": "Which TypeScript feature allows you to define a type that represents a function signature?",
+      "options": [
+        "Enums",
+        "Generics",
+        "Function Types",
+        "Interfaces"
+      ],
+      "correctAnswer": "Function Types",
+      "explanation": "Function Types in TypeScript allow you to define a type that represents a function signature."
+    },
+    {
+      "id": 41,
+      "question": "What is the purpose of the 'aria-labelledby' attribute in HTML?",
+      "options": [
+        "To link an element to a CSS file",
+        "To define a label for a form input",
+        "To associate an element with a label",
+        "To specify the language of the content"
+      ],
+      "correctAnswer": "To associate an element with a label",
+      "explanation": "The 'aria-labelledby' attribute is used to associate an element with a label, improving accessibility."
+    },
+    {
+      "id": 42,
+      "question": "Which CSS property is used to create a gradient background?",
+      "options": [
+        "linear-gradient",
+        "gradient",
+        "background-image",
+        "background-color"
+      ],
+      "correctAnswer": "background-image",
+      "explanation": "The 'background-image' property is used to create gradient backgrounds using functions like 'linear-gradient'."
+    },
+    {
+      "id": 43,
+      "question": "What is the purpose of the 'useCallback' hook in React?",
+      "options": [
+        "To handle side effects",
+        "To manage state in functional components",
+        "To create reusable logic",
+        "To memoize callback functions"
+      ],
+      "correctAnswer": "To memoize callback functions",
+      "explanation": "The 'useCallback' hook is used to memoize callback functions, preventing unnecessary re-renders."
+    },
+    {
+      "id": 44,
+      "question": "What is the output of the following JavaScript code? console.log([] == ![]);",
+      "options": [
+        "false",
+        "NaN",
+        "true",
+        "undefined"
+      ],
+      "correctAnswer": "true",
+      "explanation": "In JavaScript, the '==' operator performs type coercion, and '[] == ![]' evaluates to 'true' due to the way coercion works."
+    },
+    {
+      "id": 45,
+      "question": "Which TypeScript type is used to represent a value that could be of any type?",
+      "options": [
+        "never",
+        "any",
+        "void",
+        "unknown"
+      ],
+      "correctAnswer": "any",
+      "explanation": "The 'any' type in TypeScript allows a variable to hold values of any type, disabling type checking."
+    },
+    {
+      "id": 46,
+      "question": "What is the purpose of the 'connect' function in Redux?",
+      "options": [
+        "To combine reducers",
+        "To connect a React component to the Redux store",
+        "To dispatch actions to the store",
+        "To create a new state object"
+      ],
+      "correctAnswer": "To connect a React component to the Redux store",
+      "explanation": "The 'connect' function is used to connect a React component to the Redux store, allowing it to access state and dispatch actions."
+    },
+    {
+      "id": 47,
+      "question": "Which Tailwind CSS class is used to add a hover effect to an element?",
+      "options": [
+        "active:",
+        "focus:",
+        "hover:",
+        "group-hover:"
+      ],
+      "correctAnswer": "hover:",
+      "explanation": "The 'hover:' prefix in Tailwind CSS is used to apply styles when an element is hovered over."
+    },
+    {
+      "id": 48,
+      "question": "What is the purpose of the 'crossorigin' attribute in a script tag?",
+      "options": [
+        "To preload the script",
+        "To defer script execution",
+        "To execute the script immediately",
+        "To enable CORS for the script"
+      ],
+      "correctAnswer": "To enable CORS for the script",
+      "explanation": "The 'crossorigin' attribute is used to enable Cross-Origin Resource Sharing (CORS) for the script."
+    },
+    {
+      "id": 49,
+      "question": "Which CSS property is used to control the order of flex items?",
+      "options": [
+        "order",
+        "flex-direction",
+        "flex-order",
+        "align-items"
+      ],
+      "correctAnswer": "order",
+      "explanation": "The 'order' property is used to control the order in which flex items appear within a flex container."
+    },
+    {
+      "id": 50,
+      "question": "What is the purpose of the 'useRef' hook in React?",
+      "options": [
+        "To handle side effects",
+        "To persist values across renders without causing re-renders",
+        "To manage state in functional components",
+        "To create reusable logic"
+      ],
+      "correctAnswer": "To persist values across renders without causing re-renders",
+      "explanation": "The 'useRef' hook is used to persist values across renders without triggering re-renders."
+    },
+    {
+      "id": 51,
+      "question": "What is the output of the following JavaScript code? console.log(typeof []);",
+      "options": [
+        "object",
+        "string",
+        "undefined",
+        "array"
+      ],
+      "correctAnswer": "object",
+      "explanation": "In JavaScript, arrays are a type of object, so 'typeof []' returns 'object'."
+    },
+    {
+      "id": 52,
+      "question": "Which TypeScript feature allows you to define a type that represents a function with specific parameters and return type?",
+      "options": [
+        "Enums",
+        "Function Types",
+        "Generics",
+        "Interfaces"
+      ],
+      "correctAnswer": "Function Types",
+      "explanation": "Function Types in TypeScript allow you to define a type that represents a function with specific parameters and return type."
+    },
+    {
+      "id": 53,
+      "question": "What is the purpose of the 'mapDispatchToProps' function in Redux?",
+      "options": [
+        "To create a new state object",
+        "To map dispatch actions to component props",
+        "To combine reducers",
+        "To map state to component props"
+      ],
+      "correctAnswer": "To map dispatch actions to component props",
+      "explanation": "The 'mapDispatchToProps' function is used to map dispatch actions to the props of a React component."
+    },
+    {
+      "id": 54,
+      "question": "Which Tailwind CSS class is used to add a border to an element?",
+      "options": [
+        "border",
+        "border-style",
+        "outline",
+        "border-width"
+      ],
+      "correctAnswer": "border",
+      "explanation": "The 'border' class in Tailwind CSS is used to add a border to an element."
+    },
+    {
+      "id": 55,
+      "question": "What is the purpose of the 'Promise.race' method in JavaScript?",
+      "options": [
+        "To create a new promise",
+        "To handle errors in promises",
+        "To execute multiple promises and resolve with the first one that resolves or rejects",
+        "To chain multiple promises"
+      ],
+      "correctAnswer": "To execute multiple promises and resolve with the first one that resolves or rejects",
+      "explanation": "The 'Promise.race' method executes multiple promises and resolves or rejects as soon as the first promise resolves or rejects."
+    },
+    {
+      "id": 56,
+      "question": "Which HTML tag is used to define a table header?",
+      "options": [
+        "<th>",
+        "<thead>",
+        "<tr>",
+        "<td>"
+      ],
+      "correctAnswer": "<th>",
+      "explanation": "The '<th>' tag is used to define a table header in HTML."
+    },
+    {
+      "id": 57,
+      "question": "What does the 'flex-basis' CSS property do?",
+      "options": [
+        "Aligns items along the cross axis",
+        "Defines the initial size of a flex item",
+        "Specifies how much a flex item should grow",
+        "Controls the direction of the flex container"
+      ],
+      "correctAnswer": "Defines the initial size of a flex item",
+      "explanation": "The 'flex-basis' property defines the initial size of a flex item before any remaining space is distributed."
+    },
+    {
+      "id": 58,
+      "question": "What is the purpose of the 'useLayoutEffect' hook in React?",
+      "options": [
+        "To create reusable logic",
+        "To perform side effects after the DOM has been updated",
+        "To manage state in functional components",
+        "To handle side effects"
+      ],
+      "correctAnswer": "To perform side effects after the DOM has been updated",
+      "explanation": "The 'useLayoutEffect' hook is used to perform side effects after the DOM has been updated but before the browser paints."
+    },
+    {
+      "id": 59,
+      "question": "What is the output of the following JavaScript code? console.log(typeof null);",
+      "options": [
+        "string",
+        "object",
+        "undefined",
+        "null"
+      ],
+      "correctAnswer": "object",
+      "explanation": "In JavaScript, 'typeof null' returns 'object', which is a historical bug in the language."
+    },
+    {
+      "id": 60,
+      "question": "Which TypeScript feature allows you to define a type that represents an object with specific properties?",
+      "options": [
+        "Enums",
+        "Union Types",
+        "Generics",
+        "Interfaces"
+      ],
+      "correctAnswer": "Interfaces",
+      "explanation": "Interfaces in TypeScript allow you to define a type that represents an object with specific properties."
+    },
+    {
+      "id": 61,
+      "question": "What is the purpose of the 'aria-describedby' attribute in HTML?",
+      "options": [
+        "To link an element to a CSS file",
+        "To define a label for a form input",
+        "To provide additional descriptive information for an element",
+        "To specify the language of the content"
+      ],
+      "correctAnswer": "To provide additional descriptive information for an element",
+      "explanation": "The 'aria-describedby' attribute is used to provide additional descriptive information for an element, improving accessibility."
+    },
+    {
+      "id": 62,
+      "question": "Which CSS property is used to create a radial gradient background?",
+      "options": [
+        "background-image",
+        "linear-gradient",
+        "background-color",
+        "radial-gradient"
+      ],
+      "correctAnswer": "background-image",
+      "explanation": "The 'background-image' property is used to create radial gradient backgrounds using the 'radial-gradient' function."
+    },
+    {
+      "id": 63,
+      "question": "What is the purpose of the 'useImperativeHandle' hook in React?",
+      "options": [
+        "To handle side effects",
+        "To manage state in functional components",
+        "To create reusable logic",
+        "To customize the instance value exposed to parent components"
+      ],
+      "correctAnswer": "To customize the instance value exposed to parent components",
+      "explanation": "The 'useImperativeHandle' hook is used to customize the instance value exposed to parent components when using 'ref'."
+    },
+    {
+      "id": 64,
+      "question": "What is the output of the following JavaScript code? console.log(typeof {});",
+      "options": [
+        "object",
+        "null",
+        "string",
+        "undefined"
+      ],
+      "correctAnswer": "object",
+      "explanation": "In JavaScript, 'typeof {}' returns 'object' because objects are of the 'object' type."
+    },
+    {
+      "id": 65,
+      "question": "Which TypeScript type is used to represent a value that could be of any type but is safer than 'any'?",
+      "options": [
+        "unknown",
+        "never",
+        "void",
+        "any"
+      ],
+      "correctAnswer": "unknown",
+      "explanation": "The 'unknown' type in TypeScript is a safer alternative to 'any' because it requires type checking before use."
+    },
+    {
+      "id": 66,
+      "question": "What is the purpose of the 'createSlice' function in Redux Toolkit?",
+      "options": [
+        "To combine reducers",
+        "To dispatch actions to the store",
+        "To create a slice of the Redux store with reducers and actions",
+        "To create a new state object"
+      ],
+      "correctAnswer": "To create a slice of the Redux store with reducers and actions",
+      "explanation": "The 'createSlice' function in Redux Toolkit is used to create a slice of the Redux store, including reducers and actions."
+    },
+    {
+      "id": 67,
+      "question": "Which Tailwind CSS class is used to add a focus effect to an element?",
+      "options": [
+        "focus:",
+        "group-focus:",
+        "active:",
+        "hover:"
+      ],
+      "correctAnswer": "focus:",
+      "explanation": "The 'focus:' prefix in Tailwind CSS is used to apply styles when an element is focused."
+    },
+    {
+      "id": 68,
+      "question": "What is the purpose of the 'integrity' attribute in a script tag?",
+      "options": [
+        "To execute the script immediately",
+        "To preload the script",
+        "To defer script execution",
+        "To ensure the script's integrity using a hash"
+      ],
+      "correctAnswer": "To ensure the script's integrity using a hash",
+      "explanation": "The 'integrity' attribute is used to ensure the script's integrity by verifying its content against a cryptographic hash."
+    },
+    {
+      "id": 69,
+      "question": "Which CSS property is used to control the alignment of items along the cross axis in a flex container?",
+      "options": [
+        "align-items",
+        "align-content",
+        "flex-direction",
+        "justify-content"
+      ],
+      "correctAnswer": "align-items",
+      "explanation": "The 'align-items' property is used to control the alignment of items along the cross axis in a flex container."
+    },
+    {
+      "id": 70,
+      "question": "What is the purpose of the 'useDebugValue' hook in React?",
+      "options": [
+        "To create reusable logic",
+        "To display a label for custom hooks in React DevTools",
+        "To handle side effects",
+        "To manage state in functional components"
+      ],
+      "correctAnswer": "To display a label for custom hooks in React DevTools",
+      "explanation": "The 'useDebugValue' hook is used to display a label for custom hooks in React DevTools."
+    },
+    {
+      "id": 71,
+      "question": "What is the output of the following JavaScript code? console.log(typeof function() {});",
+      "options": [
+        "object",
+        "function",
+        "string",
+        "undefined"
+      ],
+      "correctAnswer": "function",
+      "explanation": "In JavaScript, 'typeof function() {}' returns 'function' because functions are of the 'function' type."
+    },
+    {
+      "id": 72,
+      "question": "Which TypeScript feature allows you to define a type that represents an array of a specific type?",
+      "options": [
+        "Interfaces",
+        "Array Types",
+        "Enums",
+        "Generics"
+      ],
+      "correctAnswer": "Array Types",
+      "explanation": "Array Types in TypeScript allow you to define a type that represents an array of a specific type, e.g., 'number[]'."
+    },
+    {
+      "id": 73,
+      "question": "What is the purpose of the 'createAsyncThunk' function in Redux Toolkit?",
+      "options": [
+        "To create a new state object",
+        "To dispatch actions to the store",
+        "To handle asynchronous actions in Redux",
+        "To combine reducers"
+      ],
+      "correctAnswer": "To handle asynchronous actions in Redux",
+      "explanation": "The 'createAsyncThunk' function in Redux Toolkit is used to handle asynchronous actions, such as API calls."
+    },
+    {
+      "id": 74,
+      "question": "Which Tailwind CSS class is used to add a transition effect to an element?",
+      "options": [
+        "duration",
+        "transform",
+        "animate",
+        "transition"
+      ],
+      "correctAnswer": "transition",
+      "explanation": "The 'transition' class in Tailwind CSS is used to add a transition effect to an element."
+    },
+    {
+      "id": 75,
+      "question": "What is the purpose of the 'Promise.finally' method in JavaScript?",
+      "options": [
+        "To chain multiple promises",
+        "To execute code after a promise is settled (resolved or rejected)",
+        "To create a new promise",
+        "To handle errors in promises"
+      ],
+      "correctAnswer": "To execute code after a promise is settled (resolved or rejected)",
+      "explanation": "The 'Promise.finally' method is used to execute code after a promise is settled, regardless of whether it was resolved or rejected."
+    },
+    {
+      "id": 76,
+      "question": "Which HTML tag is used to define a table footer?",
+      "options": [
+        "<tfoot>",
+        "<thead>",
+        "<tr>",
+        "<td>"
+      ],
+      "correctAnswer": "<tfoot>",
+      "explanation": "The '<tfoot>' tag is used to define a table footer in HTML."
+    },
+    {
+      "id": 77,
+      "question": "What does the 'flex-wrap' CSS property do?",
+      "options": [
+        "Controls the direction of the flex container",
+        "Aligns items along the cross axis",
+        "Controls whether flex items are forced onto one line or can wrap onto multiple lines",
+        "Specifies how much a flex item should grow"
+      ],
+      "correctAnswer": "Controls whether flex items are forced onto one line or can wrap onto multiple lines",
+      "explanation": "The 'flex-wrap' property controls whether flex items are forced onto one line or can wrap onto multiple lines."
+    },
+    {
+      "id": 78,
+      "question": "What is the purpose of the 'useTransition' hook in React?",
+      "options": [
+        "To handle side effects",
+        "To mark some state updates as non-urgent",
+        "To create reusable logic",
+        "To manage state in functional components"
+      ],
+      "correctAnswer": "To mark some state updates as non-urgent",
+      "explanation": "The 'useTransition' hook is used to mark some state updates as non-urgent, allowing higher-priority updates to occur first."
+    },
+    {
+      "id": 79,
+      "question": "What is the output of the following JavaScript code? console.log(typeof NaN);",
+      "options": [
+        "NaN",
+        "string",
+        "undefined",
+        "number"
+      ],
+      "correctAnswer": "number",
+      "explanation": "In JavaScript, 'NaN' is considered a numeric value, so 'typeof NaN' returns 'number'."
+    },
+    {
+      "id": 80,
+      "question": "Which TypeScript feature allows you to define a type that represents a tuple?",
+      "options": [
+        "Interfaces",
+        "Enums",
+        "Tuple Types",
+        "Generics"
+      ],
+      "correctAnswer": "Tuple Types",
+      "explanation": "Tuple Types in TypeScript allow you to define a type that represents an array with a fixed number of elements of specific types."
+    }
+  ]
+}

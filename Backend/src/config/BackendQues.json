@@ -1,0 +1,1204 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the primary role of a backend in a web application?",
+      "options": [
+        "To optimize frontend performance",
+        "To handle user interface and design",
+        "To handle client-side rendering",
+        "To manage data, business logic, and server-side operations"
+      ],
+      "correctAnswer": "To manage data, business logic, and server-side operations",
+      "explanation": "The backend is responsible for managing data, business logic, and server-side operations, while the frontend handles the user interface."
+    },
+    {
+      "id": 2,
+      "question": "Which protocol is commonly used for communication between the frontend and backend?",
+      "options": [
+        "FTP",
+        "TCP",
+        "SMTP",
+        "HTTP/HTTPS"
+      ],
+      "correctAnswer": "HTTP/HTTPS",
+      "explanation": "HTTP/HTTPS is the most common protocol for communication between the frontend and backend in web applications."
+    },
+    {
+      "id": 3,
+      "question": "What is the purpose of a reverse proxy in backend architecture?",
+      "options": [
+        "To handle database queries",
+        "To route requests to the appropriate backend server",
+        "To cache static assets",
+        "To manage user authentication"
+      ],
+      "correctAnswer": "To route requests to the appropriate backend server",
+      "explanation": "A reverse proxy routes client requests to the appropriate backend server, improving scalability and security."
+    },
+    {
+      "id": 4,
+      "question": "What is the difference between synchronous and asynchronous processing in backend systems?",
+      "options": [
+        "Asynchronous processing requires multithreading",
+        "Asynchronous processing is slower than synchronous processing",
+        "Synchronous processing is used only for database operations",
+        "Synchronous processing blocks the execution thread, while asynchronous processing does not"
+      ],
+      "correctAnswer": "Synchronous processing blocks the execution thread, while asynchronous processing does not",
+      "explanation": "Synchronous processing blocks the execution thread until the operation completes, while asynchronous processing allows the thread to handle other tasks."
+    },
+    {
+      "id": 5,
+      "question": "What is the purpose of environment variables in backend development?",
+      "options": [
+        "To define the structure of the database",
+        "To store sensitive configuration data like API keys and database credentials",
+        "To handle user authentication",
+        "To manage frontend assets"
+      ],
+      "correctAnswer": "To store sensitive configuration data like API keys and database credentials",
+      "explanation": "Environment variables are used to store sensitive configuration data, making it easier to manage and secure."
+    },
+    {
+      "id": 6,
+      "question": "What is the role of a load balancer in backend architecture?",
+      "options": [
+        "To handle database queries",
+        "To cache static assets",
+        "To distribute incoming requests across multiple servers",
+        "To manage user sessions"
+      ],
+      "correctAnswer": "To distribute incoming requests across multiple servers",
+      "explanation": "A load balancer distributes incoming requests across multiple servers to improve performance and reliability."
+    },
+    {
+      "id": 7,
+      "question": "What is the purpose of a backend framework?",
+      "options": [
+        "To handle frontend rendering",
+        "To provide a structured way to build and organize server-side code",
+        "To manage database migrations",
+        "To optimize network latency"
+      ],
+      "correctAnswer": "To provide a structured way to build and organize server-side code",
+      "explanation": "Backend frameworks provide a structured way to build and organize server-side code, reducing development time and complexity."
+    },
+    {
+      "id": 8,
+      "question": "What is the difference between stateless and stateful backend systems?",
+      "options": [
+        "Stateless systems do not store client data between requests, while stateful systems do",
+        "Stateful systems are faster than stateless systems",
+        "Stateful systems are more scalable than stateless systems",
+        "Stateless systems require a database for every request"
+      ],
+      "correctAnswer": "Stateless systems do not store client data between requests, while stateful systems do",
+      "explanation": "Stateless systems do not store client data between requests, making them more scalable, while stateful systems maintain client data across requests."
+    },
+    {
+      "id": 9,
+      "question": "What is the purpose of a backend API?",
+      "options": [
+        "To manage database connections",
+        "To expose server-side functionality to clients",
+        "To handle frontend rendering",
+        "To optimize server performance"
+      ],
+      "correctAnswer": "To expose server-side functionality to clients",
+      "explanation": "A backend API exposes server-side functionality to clients, allowing them to interact with the backend."
+    },
+    {
+      "id": 10,
+      "question": "What is the role of middleware in backend development?",
+      "options": [
+        "To process requests and responses before they reach the main application logic",
+        "To optimize network latency",
+        "To handle frontend rendering",
+        "To manage database queries"
+      ],
+      "correctAnswer": "To process requests and responses before they reach the main application logic",
+      "explanation": "Middleware processes requests and responses before they reach the main application logic, enabling tasks like logging, authentication, and error handling."
+    },
+    {
+      "id": 11,
+      "question": "What is the difference between SQL and NoSQL databases?",
+      "options": [
+        "NoSQL databases use tables, while SQL databases use documents",
+        "SQL databases are faster than NoSQL databases",
+        "NoSQL databases support complex joins",
+        "SQL databases are relational, while NoSQL databases are non-relational"
+      ],
+      "correctAnswer": "SQL databases are relational, while NoSQL databases are non-relational",
+      "explanation": "SQL databases are relational and use tables, while NoSQL databases are non-relational and use documents, key-value pairs, or graphs."
+    },
+    {
+      "id": 12,
+      "question": "What is the purpose of indexing in a database?",
+      "options": [
+        "To handle database replication",
+        "To store backup data",
+        "To manage database migrations",
+        "To improve query performance"
+      ],
+      "correctAnswer": "To improve query performance",
+      "explanation": "Indexing improves query performance by allowing the database to quickly locate rows without scanning the entire table."
+    },
+    {
+      "id": 13,
+      "question": "What is a database transaction?",
+      "options": [
+        "A sequence of operations performed as a single logical unit of work",
+        "A backup of the database",
+        "A type of database index",
+        "A query to retrieve data"
+      ],
+      "correctAnswer": "A sequence of operations performed as a single logical unit of work",
+      "explanation": "A database transaction is a sequence of operations performed as a single logical unit of work, ensuring data integrity."
+    },
+    {
+      "id": 14,
+      "question": "What is the purpose of database normalization?",
+      "options": [
+        "To increase database storage size",
+        "To reduce data redundancy and improve data integrity",
+        "To handle database replication",
+        "To optimize database backups"
+      ],
+      "correctAnswer": "To reduce data redundancy and improve data integrity",
+      "explanation": "Database normalization reduces data redundancy and improves data integrity by organizing data into related tables."
+    },
+    {
+      "id": 15,
+      "question": "What is the difference between a primary key and a foreign key?",
+      "options": [
+        "Primary keys and foreign keys are the same",
+        "Foreign keys are used only in NoSQL databases",
+        "A primary key uniquely identifies a row in a table, while a foreign key references a primary key in another table",
+        "A foreign key uniquely identifies a row in a table, while a primary key references a foreign key in another table"
+      ],
+      "correctAnswer": "A primary key uniquely identifies a row in a table, while a foreign key references a primary key in another table",
+      "explanation": "A primary key uniquely identifies a row in a table, while a foreign key references a primary key in another table to establish relationships."
+    },
+    {
+      "id": 16,
+      "question": "What is the purpose of a database schema?",
+      "options": [
+        "To manage database backups",
+        "To optimize database queries",
+        "To handle database replication",
+        "To define the structure of the database, including tables, columns, and relationships"
+      ],
+      "correctAnswer": "To define the structure of the database, including tables, columns, and relationships",
+      "explanation": "A database schema defines the structure of the database, including tables, columns, and relationships."
+    },
+    {
+      "id": 17,
+      "question": "What is the difference between a relational database and a document database?",
+      "options": [
+        "Relational databases do not support transactions",
+        "Document databases are faster than relational databases",
+        "Relational databases use tables, while document databases use JSON-like documents",
+        "Document databases use SQL for queries"
+      ],
+      "correctAnswer": "Relational databases use tables, while document databases use JSON-like documents",
+      "explanation": "Relational databases use tables to store data, while document databases use JSON-like documents, making them more flexible for unstructured data."
+    },
+    {
+      "id": 18,
+      "question": "What is the purpose of database replication?",
+      "options": [
+        "To handle database migrations",
+        "To optimize database queries",
+        "To create multiple copies of a database for redundancy and scalability",
+        "To manage database backups"
+      ],
+      "correctAnswer": "To create multiple copies of a database for redundancy and scalability",
+      "explanation": "Database replication creates multiple copies of a database to improve redundancy, scalability, and fault tolerance."
+    },
+    {
+      "id": 19,
+      "question": "What is the difference between a clustered and a non-clustered index?",
+      "options": [
+        "A clustered index determines the physical order of data in a table, while a non-clustered index does not",
+        "Non-clustered indexes are faster than clustered indexes",
+        "A non-clustered index determines the physical order of data in a table, while a clustered index does not",
+        "Clustered indexes are used only in NoSQL databases"
+      ],
+      "correctAnswer": "A clustered index determines the physical order of data in a table, while a non-clustered index does not",
+      "explanation": "A clustered index determines the physical order of data in a table, while a non-clustered index creates a separate structure to store index data."
+    },
+    {
+      "id": 20,
+      "question": "What is the purpose of database sharding?",
+      "options": [
+        "To horizontally partition data across multiple databases to improve scalability",
+        "To optimize database backups",
+        "To manage database migrations",
+        "To handle database replication"
+      ],
+      "correctAnswer": "To horizontally partition data across multiple databases to improve scalability",
+      "explanation": "Database sharding horizontally partitions data across multiple databases to improve scalability and performance."
+    },
+    {
+      "id": 21,
+      "question": "What is the purpose of RESTful APIs?",
+      "options": [
+        "To handle frontend rendering",
+        "To provide a standardized way to interact with resources over HTTP",
+        "To manage database connections",
+        "To optimize server performance"
+      ],
+      "correctAnswer": "To provide a standardized way to interact with resources over HTTP",
+      "explanation": "RESTful APIs provide a standardized way to interact with resources over HTTP using methods like GET, POST, PUT, and DELETE."
+    },
+    {
+      "id": 22,
+      "question": "What is the difference between REST and GraphQL?",
+      "options": [
+        "REST uses multiple endpoints, while GraphQL uses a single endpoint",
+        "REST does not support queries",
+        "GraphQL is faster than REST",
+        "GraphQL uses only GET requests"
+      ],
+      "correctAnswer": "REST uses multiple endpoints, while GraphQL uses a single endpoint",
+      "explanation": "REST uses multiple endpoints to access resources, while GraphQL uses a single endpoint and allows clients to specify the data they need."
+    },
+    {
+      "id": 23,
+      "question": "What is the purpose of HTTP status codes in APIs?",
+      "options": [
+        "To handle frontend rendering",
+        "To indicate the result of a client's request",
+        "To manage database connections",
+        "To optimize server performance"
+      ],
+      "correctAnswer": "To indicate the result of a client's request",
+      "explanation": "HTTP status codes indicate the result of a client's request, such as 200 for success, 404 for not found, and 500 for server errors."
+    },
+    {
+      "id": 24,
+      "question": "What is the purpose of API versioning?",
+      "options": [
+        "To handle frontend rendering",
+        "To optimize database queries",
+        "To manage changes in the API without breaking existing clients",
+        "To improve server performance"
+      ],
+      "correctAnswer": "To manage changes in the API without breaking existing clients",
+      "explanation": "API versioning allows developers to make changes to the API without breaking existing clients by maintaining multiple versions."
+    },
+    {
+      "id": 25,
+      "question": "What is the difference between GET and POST requests?",
+      "options": [
+        "GET requests retrieve data, while POST requests submit data",
+        "POST requests do not include a request body",
+        "POST requests are faster than GET requests",
+        "GET requests are used only for authentication"
+      ],
+      "correctAnswer": "GET requests retrieve data, while POST requests submit data",
+      "explanation": "GET requests retrieve data from the server, while POST requests submit data to the server for processing."
+    },
+    {
+      "id": 26,
+      "question": "What is the purpose of query parameters in a REST API?",
+      "options": [
+        "To filter or modify the response data",
+        "To handle database connections",
+        "To authenticate the user",
+        "To define the API version"
+      ],
+      "correctAnswer": "To filter or modify the response data",
+      "explanation": "Query parameters are used to filter, sort, or modify the response data in a REST API."
+    },
+    {
+      "id": 27,
+      "question": "What is the difference between PUT and PATCH requests?",
+      "options": [
+        "PATCH replaces the entire resource, while PUT updates only specific fields",
+        "PUT replaces the entire resource, while PATCH updates only specific fields",
+        "PUT is used only for creating resources",
+        "PATCH is used only for deleting resources"
+      ],
+      "correctAnswer": "PUT replaces the entire resource, while PATCH updates only specific fields",
+      "explanation": "PUT replaces the entire resource, while PATCH updates only specific fields of the resource."
+    },
+    {
+      "id": 28,
+      "question": "What is the purpose of API rate limiting?",
+      "options": [
+        "To optimize database queries",
+        "To improve server performance",
+        "To control the number of requests a client can make in a given time",
+        "To handle frontend rendering"
+      ],
+      "correctAnswer": "To control the number of requests a client can make in a given time",
+      "explanation": "API rate limiting controls the number of requests a client can make in a given time to prevent abuse and ensure fair usage."
+    },
+    {
+      "id": 29,
+      "question": "What is the purpose of CORS in APIs?",
+      "options": [
+        "To define the API version",
+        "To authenticate the user",
+        "To allow or restrict cross-origin requests",
+        "To handle database connections"
+      ],
+      "correctAnswer": "To allow or restrict cross-origin requests",
+      "explanation": "CORS (Cross-Origin Resource Sharing) allows or restricts cross-origin requests to enhance security."
+    },
+    {
+      "id": 30,
+      "question": "What is the purpose of API documentation?",
+      "options": [
+        "To optimize database queries",
+        "To handle frontend rendering",
+        "To provide a reference for developers on how to use the API",
+        "To improve server performance"
+      ],
+      "correctAnswer": "To provide a reference for developers on how to use the API",
+      "explanation": "API documentation provides a reference for developers on how to use the API, including endpoints, parameters, and examples."
+    },
+    {
+      "id": 31,
+      "question": "What is the purpose of JWT (JSON Web Tokens) in authentication?",
+      "options": [
+        "To encrypt database connections",
+        "To handle frontend rendering",
+        "To securely transmit information between parties as a JSON object",
+        "To optimize server performance"
+      ],
+      "correctAnswer": "To securely transmit information between parties as a JSON object",
+      "explanation": "JWT is used to securely transmit information between parties as a JSON object, often for authentication and authorization."
+    },
+    {
+      "id": 32,
+      "question": "What is the difference between authentication and authorization?",
+      "options": [
+        "Authorization is used only for database access",
+        "Authentication verifies identity, while authorization verifies permissions",
+        "Authorization verifies identity, while authentication verifies permissions",
+        "Authentication and authorization are the same"
+      ],
+      "correctAnswer": "Authentication verifies identity, while authorization verifies permissions",
+      "explanation": "Authentication verifies the identity of a user, while authorization verifies what permissions the user has."
+    },
+    {
+      "id": 33,
+      "question": "What is the purpose of OAuth in authentication?",
+      "options": [
+        "To handle frontend rendering",
+        "To encrypt database connections",
+        "To allow third-party applications to access user data without sharing credentials",
+        "To optimize server performance"
+      ],
+      "correctAnswer": "To allow third-party applications to access user data without sharing credentials",
+      "explanation": "OAuth allows third-party applications to access user data without sharing credentials, enhancing security."
+    },
+    {
+      "id": 34,
+      "question": "What is the purpose of hashing in password storage?",
+      "options": [
+        "To optimize server performance",
+        "To encrypt database connections",
+        "To handle frontend rendering",
+        "To securely store passwords by converting them into irreversible hashes"
+      ],
+      "correctAnswer": "To securely store passwords by converting them into irreversible hashes",
+      "explanation": "Hashing converts passwords into irreversible hashes, making it difficult for attackers to retrieve the original password."
+    },
+    {
+      "id": 35,
+      "question": "What is the purpose of HTTPS in backend security?",
+      "options": [
+        "To handle database connections",
+        "To authenticate the user",
+        "To define the API version",
+        "To encrypt data transmitted between the client and server"
+      ],
+      "correctAnswer": "To encrypt data transmitted between the client and server",
+      "explanation": "HTTPS encrypts data transmitted between the client and server, preventing eavesdropping and tampering."
+    },
+    {
+      "id": 36,
+      "question": "What is the purpose of middleware in Express.js?",
+      "options": [
+        "To manage database queries",
+        "To optimize server performance",
+        "To process requests and responses before they reach the main application logic",
+        "To handle frontend rendering"
+      ],
+      "correctAnswer": "To process requests and responses before they reach the main application logic",
+      "explanation": "Middleware in Express.js processes requests and responses before they reach the main application logic, enabling tasks like logging, authentication, and error handling."
+    },
+    {
+      "id": 37,
+      "question": "What is the purpose of the 'app.use()' method in Express.js?",
+      "options": [
+        "To optimize server performance",
+        "To define routes",
+        "To mount middleware functions",
+        "To handle database connections"
+      ],
+      "correctAnswer": "To mount middleware functions",
+      "explanation": "The 'app.use()' method in Express.js is used to mount middleware functions that execute for every request."
+    },
+    {
+      "id": 38,
+      "question": "What is the purpose of the 'req.params' object in Express.js?",
+      "options": [
+        "To access route parameters",
+        "To access request body",
+        "To access request headers",
+        "To access query parameters"
+      ],
+      "correctAnswer": "To access route parameters",
+      "explanation": "The 'req.params' object in Express.js is used to access route parameters defined in the URL."
+    },
+    {
+      "id": 39,
+      "question": "What is the purpose of the 'res.send()' method in Express.js?",
+      "options": [
+        "To optimize server performance",
+        "To send a response to the client",
+        "To handle database queries",
+        "To define routes"
+      ],
+      "correctAnswer": "To send a response to the client",
+      "explanation": "The 'res.send()' method in Express.js is used to send a response to the client, such as HTML, JSON, or plain text."
+    },
+    {
+      "id": 40,
+      "question": "What is the purpose of the 'next()' function in Express.js middleware?",
+      "options": [
+        "To optimize server performance",
+        "To handle database queries",
+        "To pass control to the next middleware function",
+        "To end the request-response cycle"
+      ],
+      "correctAnswer": "To pass control to the next middleware function",
+      "explanation": "The 'next()' function in Express.js middleware passes control to the next middleware function in the stack."
+    },
+    {
+      "id": 41,
+      "question": "What is the purpose of caching in backend systems?",
+      "options": [
+        "To store frequently accessed data for faster retrieval",
+        "To manage user authentication",
+        "To optimize frontend rendering",
+        "To handle database queries"
+      ],
+      "correctAnswer": "To store frequently accessed data for faster retrieval",
+      "explanation": "Caching stores frequently accessed data in memory or a fast storage layer for faster retrieval, improving performance."
+    },
+    {
+      "id": 42,
+      "question": "What is the difference between client-side and server-side caching?",
+      "options": [
+        "Server-side caching is used only for frontend rendering",
+        "Client-side caching stores data on the client, while server-side caching stores data on the server",
+        "Client-side caching is used only for database queries",
+        "Server-side caching is faster than client-side caching"
+      ],
+      "correctAnswer": "Client-side caching stores data on the client, while server-side caching stores data on the server",
+      "explanation": "Client-side caching stores data on the client (e.g., browser), while server-side caching stores data on the server."
+    },
+    {
+      "id": 43,
+      "question": "What is the purpose of a CDN (Content Delivery Network)?",
+      "options": [
+        "To handle database queries",
+        "To manage user authentication",
+        "To distribute content across multiple servers for faster delivery",
+        "To optimize frontend rendering"
+      ],
+      "correctAnswer": "To distribute content across multiple servers for faster delivery",
+      "explanation": "A CDN distributes content across multiple servers located in different regions, reducing latency and improving delivery speed."
+    },
+    {
+      "id": 44,
+      "question": "What is the purpose of cache invalidation?",
+      "options": [
+        "To optimize frontend rendering",
+        "To manage user authentication",
+        "To handle database queries",
+        "To remove outdated or stale data from the cache"
+      ],
+      "correctAnswer": "To remove outdated or stale data from the cache",
+      "explanation": "Cache invalidation removes outdated or stale data from the cache to ensure users receive up-to-date information."
+    },
+    {
+      "id": 45,
+      "question": "What is the purpose of a cache hit and a cache miss?",
+      "options": [
+        "Cache hits and misses are the same",
+        "A cache miss occurs when data is found in the cache, while a cache hit occurs when data is not found",
+        "A cache hit occurs when data is found in the cache, while a cache miss occurs when data is not found",
+        "Cache hits are used only for database queries"
+      ],
+      "correctAnswer": "A cache hit occurs when data is found in the cache, while a cache miss occurs when data is not found",
+      "explanation": "A cache hit occurs when data is found in the cache, while a cache miss occurs when data is not found and must be fetched from the original source."
+    },
+    {
+      "id": 46,
+      "question": "What is the purpose of a message queue in backend systems?",
+      "options": [
+        "To decouple components and enable asynchronous communication",
+        "To manage user authentication",
+        "To handle database queries",
+        "To optimize frontend rendering"
+      ],
+      "correctAnswer": "To decouple components and enable asynchronous communication",
+      "explanation": "A message queue decouples components and enables asynchronous communication, improving scalability and fault tolerance."
+    },
+    {
+      "id": 47,
+      "question": "What is the difference between a message queue and a pub/sub system?",
+      "options": [
+        "Pub/sub systems are used only for database queries",
+        "A message queue delivers messages to a single consumer, while pub/sub delivers messages to multiple subscribers",
+        "A pub/sub system delivers messages to a single consumer, while a message queue delivers messages to multiple subscribers",
+        "Message queues and pub/sub systems are the same"
+      ],
+      "correctAnswer": "A message queue delivers messages to a single consumer, while pub/sub delivers messages to multiple subscribers",
+      "explanation": "A message queue delivers messages to a single consumer, while a pub/sub system delivers messages to multiple subscribers."
+    },
+    {
+      "id": 48,
+      "question": "What is the purpose of event-driven architecture?",
+      "options": [
+        "To manage user authentication",
+        "To enable components to react to events in real-time",
+        "To optimize frontend rendering",
+        "To handle database queries"
+      ],
+      "correctAnswer": "To enable components to react to events in real-time",
+      "explanation": "Event-driven architecture enables components to react to events in real-time, improving responsiveness and scalability."
+    },
+    {
+      "id": 49,
+      "question": "What is the purpose of a dead-letter queue?",
+      "options": [
+        "To store messages that cannot be processed",
+        "To optimize frontend rendering",
+        "To handle database queries",
+        "To manage user authentication"
+      ],
+      "correctAnswer": "To store messages that cannot be processed",
+      "explanation": "A dead-letter queue stores messages that cannot be processed, allowing developers to debug and reprocess them later."
+    },
+    {
+      "id": 50,
+      "question": "What is the purpose of a message broker?",
+      "options": [
+        "To optimize frontend rendering",
+        "To manage user authentication",
+        "To facilitate communication between producers and consumers",
+        "To handle database queries"
+      ],
+      "correctAnswer": "To facilitate communication between producers and consumers",
+      "explanation": "A message broker facilitates communication between producers and consumers, ensuring reliable message delivery."
+    },
+    {
+      "id": 51,
+      "question": "What is the purpose of CI/CD in backend development?",
+      "options": [
+        "To automate the process of building, testing, and deploying code",
+        "To handle database queries",
+        "To manage user authentication",
+        "To optimize frontend rendering"
+      ],
+      "correctAnswer": "To automate the process of building, testing, and deploying code",
+      "explanation": "CI/CD (Continuous Integration/Continuous Deployment) automates the process of building, testing, and deploying code, improving efficiency and reliability."
+    },
+    {
+      "id": 52,
+      "question": "What is the purpose of Docker in backend development?",
+      "options": [
+        "To containerize applications for consistent deployment across environments",
+        "To optimize frontend rendering",
+        "To handle database queries",
+        "To manage user authentication"
+      ],
+      "correctAnswer": "To containerize applications for consistent deployment across environments",
+      "explanation": "Docker containerizes applications, ensuring consistent deployment across different environments."
+    },
+    {
+      "id": 53,
+      "question": "What is the purpose of Kubernetes in backend development?",
+      "options": [
+        "To manage user authentication",
+        "To orchestrate and manage containerized applications",
+        "To optimize frontend rendering",
+        "To handle database queries"
+      ],
+      "correctAnswer": "To orchestrate and manage containerized applications",
+      "explanation": "Kubernetes orchestrates and manages containerized applications, ensuring scalability and fault tolerance."
+    },
+    {
+      "id": 54,
+      "question": "What is the purpose of a reverse proxy in deployment?",
+      "options": [
+        "To route requests to the appropriate backend server",
+        "To optimize frontend rendering",
+        "To manage user authentication",
+        "To handle database queries"
+      ],
+      "correctAnswer": "To route requests to the appropriate backend server",
+      "explanation": "A reverse proxy routes requests to the appropriate backend server, improving scalability and security."
+    },
+    {
+      "id": 55,
+      "question": "What is the purpose of environment variables in deployment?",
+      "options": [
+        "To handle database queries",
+        "To optimize frontend rendering",
+        "To manage user authentication",
+        "To store configuration data like API keys and database credentials"
+      ],
+      "correctAnswer": "To store configuration data like API keys and database credentials",
+      "explanation": "Environment variables store configuration data, making it easier to manage and secure during deployment."
+    },
+    {
+      "id": 56,
+      "question": "What is the purpose of a backend framework?",
+      "options": [
+        "To manage user authentication",
+        "To optimize frontend rendering",
+        "To provide a structured way to build and organize server-side code",
+        "To handle database queries"
+      ],
+      "correctAnswer": "To provide a structured way to build and organize server-side code",
+      "explanation": "Backend frameworks provide a structured way to build and organize server-side code, reducing development time and complexity."
+    },
+    {
+      "id": 57,
+      "question": "What is the difference between Express.js and Nest.js?",
+      "options": [
+        "Express.js is a minimal framework, while Nest.js is a full-featured framework with built-in support for TypeScript",
+        "Express.js and Nest.js are the same",
+        "Nest.js is a minimal framework, while Express.js is a full-featured framework",
+        "Nest.js is used only for frontend rendering"
+      ],
+      "correctAnswer": "Express.js is a minimal framework, while Nest.js is a full-featured framework with built-in support for TypeScript",
+      "explanation": "Express.js is a minimal framework, while Nest.js is a full-featured framework with built-in support for TypeScript and features like dependency injection."
+    },
+    {
+      "id": 58,
+      "question": "What is the purpose of Django in backend development?",
+      "options": [
+        "To manage user authentication",
+        "To optimize frontend rendering",
+        "To handle database queries",
+        "To provide a high-level Python framework for building web applications"
+      ],
+      "correctAnswer": "To provide a high-level Python framework for building web applications",
+      "explanation": "Django is a high-level Python framework that simplifies backend development with built-in features like ORM and authentication."
+    },
+    {
+      "id": 59,
+      "question": "What is the purpose of Laravel in backend development?",
+      "options": [
+        "To handle database queries",
+        "To manage user authentication",
+        "To provide a PHP framework for building web applications with elegant syntax",
+        "To optimize frontend rendering"
+      ],
+      "correctAnswer": "To provide a PHP framework for building web applications with elegant syntax",
+      "explanation": "Laravel is a PHP framework known for its elegant syntax and features like Eloquent ORM and Blade templating."
+    },
+    {
+      "id": 60,
+      "question": "What is the purpose of Ruby on Rails in backend development?",
+      "options": [
+        "To provide a Ruby framework for building web applications with convention over configuration",
+        "To optimize frontend rendering",
+        "To handle database queries",
+        "To manage user authentication"
+      ],
+      "correctAnswer": "To provide a Ruby framework for building web applications with convention over configuration",
+      "explanation": "Ruby on Rails is a Ruby framework that emphasizes convention over configuration, making it easier to build web applications quickly."
+    },
+    {
+      "id": 61,
+      "question": "What is the difference between microservices and monolithic architecture?",
+      "options": [
+        "Monolithic architecture is used only for frontend rendering",
+        "Monolithic architecture breaks the application into small, independent services, while microservices combine everything into a single unit",
+        "Microservices break the application into small, independent services, while monolithic architecture combines everything into a single unit",
+        "Microservices and monolithic architecture are the same"
+      ],
+      "correctAnswer": "Microservices break the application into small, independent services, while monolithic architecture combines everything into a single unit",
+      "explanation": "Microservices architecture breaks the application into small, independent services, while monolithic architecture combines all components into a single unit."
+    },
+    {
+      "id": 62,
+      "question": "What is the main advantage of microservices architecture?",
+      "options": [
+        "Faster development for small teams",
+        "Easier debugging",
+        "Simpler deployment process",
+        "Improved scalability and flexibility"
+      ],
+      "correctAnswer": "Improved scalability and flexibility",
+      "explanation": "Microservices architecture improves scalability and flexibility by allowing each service to be developed, deployed, and scaled independently."
+    },
+    {
+      "id": 63,
+      "question": "What is the main disadvantage of microservices architecture?",
+      "options": [
+        "Harder to scale",
+        "Limited language support",
+        "Increased complexity in managing multiple services",
+        "Slower performance"
+      ],
+      "correctAnswer": "Increased complexity in managing multiple services",
+      "explanation": "Microservices architecture increases complexity due to the need to manage multiple services, communication between them, and deployment pipelines."
+    },
+    {
+      "id": 64,
+      "question": "What is the purpose of API Gateway in microservices architecture?",
+      "options": [
+        "To optimize frontend rendering",
+        "To manage user authentication",
+        "To handle database queries",
+        "To act as a single entry point for all client requests"
+      ],
+      "correctAnswer": "To act as a single entry point for all client requests",
+      "explanation": "An API Gateway acts as a single entry point for all client requests, routing them to the appropriate microservice."
+    },
+    {
+      "id": 65,
+      "question": "What is the purpose of service discovery in microservices architecture?",
+      "options": [
+        "To dynamically locate services in a distributed system",
+        "To manage user authentication",
+        "To handle database queries",
+        "To optimize frontend rendering"
+      ],
+      "correctAnswer": "To dynamically locate services in a distributed system",
+      "explanation": "Service discovery dynamically locates services in a distributed system, enabling communication between microservices."
+    },
+    {
+      "id": 66,
+      "question": "What is the purpose of circuit breakers in microservices architecture?",
+      "options": [
+        "To manage user authentication",
+        "To prevent cascading failures in a distributed system",
+        "To optimize frontend rendering",
+        "To handle database queries"
+      ],
+      "correctAnswer": "To prevent cascading failures in a distributed system",
+      "explanation": "Circuit breakers prevent cascading failures by stopping requests to a failing service and providing fallback mechanisms."
+    },
+    {
+      "id": 67,
+      "question": "What is the purpose of event sourcing in microservices architecture?",
+      "options": [
+        "To manage user authentication",
+        "To store state changes as a sequence of events",
+        "To optimize frontend rendering",
+        "To handle database queries"
+      ],
+      "correctAnswer": "To store state changes as a sequence of events",
+      "explanation": "Event sourcing stores state changes as a sequence of events, enabling easy reconstruction of the application state."
+    },
+    {
+      "id": 68,
+      "question": "What is the purpose of CQRS (Command Query Responsibility Segregation) in microservices architecture?",
+      "options": [
+        "To optimize frontend rendering",
+        "To manage user authentication",
+        "To separate read and write operations for better scalability",
+        "To handle database queries"
+      ],
+      "correctAnswer": "To separate read and write operations for better scalability",
+      "explanation": "CQRS separates read and write operations, allowing each to be optimized independently for better scalability."
+    },
+    {
+      "id": 69,
+      "question": "What is the purpose of containerization in microservices architecture?",
+      "options": [
+        "To manage user authentication",
+        "To optimize frontend rendering",
+        "To handle database queries",
+        "To package services with their dependencies for consistent deployment"
+      ],
+      "correctAnswer": "To package services with their dependencies for consistent deployment",
+      "explanation": "Containerization packages services with their dependencies, ensuring consistent deployment across environments."
+    },
+    {
+      "id": 70,
+      "question": "What is the purpose of orchestration in microservices architecture?",
+      "options": [
+        "To optimize frontend rendering",
+        "To handle database queries",
+        "To manage user authentication",
+        "To manage the deployment, scaling, and networking of containers"
+      ],
+      "correctAnswer": "To manage the deployment, scaling, and networking of containers",
+      "explanation": "Orchestration manages the deployment, scaling, and networking of containers, ensuring efficient operation of microservices."
+    },
+    {
+      "id": 71,
+      "question": "What is the purpose of infrastructure as code (IaC)?",
+      "options": [
+        "To handle database queries",
+        "To optimize frontend rendering",
+        "To manage infrastructure using code and automation",
+        "To manage user authentication"
+      ],
+      "correctAnswer": "To manage infrastructure using code and automation",
+      "explanation": "Infrastructure as code (IaC) manages infrastructure using code and automation, enabling consistent and repeatable deployments."
+    },
+    {
+      "id": 72,
+      "question": "What is the purpose of Terraform in DevOps?",
+      "options": [
+        "To optimize frontend rendering",
+        "To manage user authentication",
+        "To handle database queries",
+        "To define and provision infrastructure using code"
+      ],
+      "correctAnswer": "To define and provision infrastructure using code",
+      "explanation": "Terraform is a tool for defining and provisioning infrastructure using code, supporting multiple cloud providers."
+    },
+    {
+      "id": 73,
+      "question": "What is the purpose of Ansible in DevOps?",
+      "options": [
+        "To manage user authentication",
+        "To handle database queries",
+        "To automate configuration management and application deployment",
+        "To optimize frontend rendering"
+      ],
+      "correctAnswer": "To automate configuration management and application deployment",
+      "explanation": "Ansible automates configuration management and application deployment, simplifying infrastructure management."
+    },
+    {
+      "id": 74,
+      "question": "What is the purpose of monitoring in DevOps?",
+      "options": [
+        "To handle database queries",
+        "To manage user authentication",
+        "To track the performance and health of applications and infrastructure",
+        "To optimize frontend rendering"
+      ],
+      "correctAnswer": "To track the performance and health of applications and infrastructure",
+      "explanation": "Monitoring tracks the performance and health of applications and infrastructure, enabling proactive issue resolution."
+    },
+    {
+      "id": 75,
+      "question": "What is the purpose of logging in DevOps?",
+      "options": [
+        "To manage user authentication",
+        "To handle database queries",
+        "To record events and activities for troubleshooting and analysis",
+        "To optimize frontend rendering"
+      ],
+      "correctAnswer": "To record events and activities for troubleshooting and analysis",
+      "explanation": "Logging records events and activities, providing valuable data for troubleshooting and analysis."
+    },
+    {
+      "id": 76,
+      "question": "What is the purpose of a distributed cache?",
+      "options": [
+        "To optimize frontend rendering",
+        "To handle database queries",
+        "To store data across multiple servers for high availability and scalability",
+        "To manage user authentication"
+      ],
+      "correctAnswer": "To store data across multiple servers for high availability and scalability",
+      "explanation": "A distributed cache stores data across multiple servers, improving availability and scalability."
+    },
+    {
+      "id": 77,
+      "question": "What is the purpose of cache warming?",
+      "options": [
+        "To manage user authentication",
+        "To handle database queries",
+        "To optimize frontend rendering",
+        "To preload the cache with data before it is requested"
+      ],
+      "correctAnswer": "To preload the cache with data before it is requested",
+      "explanation": "Cache warming preloads the cache with data before it is requested, reducing latency for initial requests."
+    },
+    {
+      "id": 78,
+      "question": "What is the purpose of a cache eviction policy?",
+      "options": [
+        "To handle database queries",
+        "To optimize frontend rendering",
+        "To determine which data to remove from the cache when it is full",
+        "To manage user authentication"
+      ],
+      "correctAnswer": "To determine which data to remove from the cache when it is full",
+      "explanation": "A cache eviction policy determines which data to remove from the cache when it reaches its capacity."
+    },
+    {
+      "id": 79,
+      "question": "What is the purpose of a write-through cache?",
+      "options": [
+        "To manage user authentication",
+        "To handle database queries",
+        "To write data to both the cache and the underlying storage simultaneously",
+        "To optimize frontend rendering"
+      ],
+      "correctAnswer": "To write data to both the cache and the underlying storage simultaneously",
+      "explanation": "A write-through cache writes data to both the cache and the underlying storage simultaneously, ensuring consistency."
+    },
+    {
+      "id": 80,
+      "question": "What is the purpose of a write-behind cache?",
+      "options": [
+        "To write data to the cache first and then to the underlying storage asynchronously",
+        "To handle database queries",
+        "To manage user authentication",
+        "To optimize frontend rendering"
+      ],
+      "correctAnswer": "To write data to the cache first and then to the underlying storage asynchronously",
+      "explanation": "A write-behind cache writes data to the cache first and then to the underlying storage asynchronously, improving performance."
+    },
+    {
+      "id": 81,
+      "question": "What is the purpose of a message broker in event-driven architecture?",
+      "options": [
+        "To facilitate communication between producers and consumers",
+        "To optimize frontend rendering",
+        "To manage user authentication",
+        "To handle database queries"
+      ],
+      "correctAnswer": "To facilitate communication between producers and consumers",
+      "explanation": "A message broker facilitates communication between producers and consumers, ensuring reliable message delivery."
+    },
+    {
+      "id": 82,
+      "question": "What is the purpose of a dead-letter queue in message queues?",
+      "options": [
+        "To handle database queries",
+        "To optimize frontend rendering",
+        "To manage user authentication",
+        "To store messages that cannot be processed"
+      ],
+      "correctAnswer": "To store messages that cannot be processed",
+      "explanation": "A dead-letter queue stores messages that cannot be processed, allowing developers to debug and reprocess them later."
+    },
+    {
+      "id": 83,
+      "question": "What is the purpose of event sourcing in event-driven architecture?",
+      "options": [
+        "To handle database queries",
+        "To manage user authentication",
+        "To optimize frontend rendering",
+        "To store state changes as a sequence of events"
+      ],
+      "correctAnswer": "To store state changes as a sequence of events",
+      "explanation": "Event sourcing stores state changes as a sequence of events, enabling easy reconstruction of the application state."
+    },
+    {
+      "id": 84,
+      "question": "What is the purpose of a saga pattern in microservices?",
+      "options": [
+        "To optimize frontend rendering",
+        "To handle database queries",
+        "To manage user authentication",
+        "To manage distributed transactions across multiple services"
+      ],
+      "correctAnswer": "To manage distributed transactions across multiple services",
+      "explanation": "The saga pattern manages distributed transactions across multiple services by breaking them into smaller, compensatable steps."
+    },
+    {
+      "id": 85,
+      "question": "What is the purpose of a message queue in event-driven architecture?",
+      "options": [
+        "To optimize frontend rendering",
+        "To manage user authentication",
+        "To decouple components and enable asynchronous communication",
+        "To handle database queries"
+      ],
+      "correctAnswer": "To decouple components and enable asynchronous communication",
+      "explanation": "A message queue decouples components and enables asynchronous communication, improving scalability and fault tolerance."
+    },
+    {
+      "id": 86,
+      "question": "What is the purpose of OAuth 2.0 in authentication?",
+      "options": [
+        "To encrypt database connections",
+        "To optimize server performance",
+        "To allow third-party applications to access user data without sharing credentials",
+        "To handle frontend rendering"
+      ],
+      "correctAnswer": "To allow third-party applications to access user data without sharing credentials",
+      "explanation": "OAuth 2.0 allows third-party applications to access user data without sharing credentials, enhancing security."
+    },
+    {
+      "id": 87,
+      "question": "What is the purpose of OpenID Connect in authentication?",
+      "options": [
+        "To optimize server performance",
+        "To provide identity verification on top of OAuth 2.0",
+        "To encrypt database connections",
+        "To handle frontend rendering"
+      ],
+      "correctAnswer": "To provide identity verification on top of OAuth 2.0",
+      "explanation": "OpenID Connect provides identity verification on top of OAuth 2.0, enabling single sign-on (SSO) and user authentication."
+    },
+    {
+      "id": 88,
+      "question": "What is the purpose of rate limiting in API security?",
+      "options": [
+        "To handle frontend rendering",
+        "To control the number of requests a client can make in a given time",
+        "To optimize server performance",
+        "To encrypt database connections"
+      ],
+      "correctAnswer": "To control the number of requests a client can make in a given time",
+      "explanation": "Rate limiting controls the number of requests a client can make in a given time to prevent abuse and ensure fair usage."
+    },
+    {
+      "id": 89,
+      "question": "What is the purpose of CORS in API security?",
+      "options": [
+        "To encrypt database connections",
+        "To handle frontend rendering",
+        "To allow or restrict cross-origin requests",
+        "To optimize server performance"
+      ],
+      "correctAnswer": "To allow or restrict cross-origin requests",
+      "explanation": "CORS (Cross-Origin Resource Sharing) allows or restricts cross-origin requests to enhance security."
+    },
+    {
+      "id": 90,
+      "question": "What is the purpose of JWT (JSON Web Tokens) in authentication?",
+      "options": [
+        "To encrypt database connections",
+        "To securely transmit information between parties as a JSON object",
+        "To optimize server performance",
+        "To handle frontend rendering"
+      ],
+      "correctAnswer": "To securely transmit information between parties as a JSON object",
+      "explanation": "JWT (JSON Web Tokens) are used to securely transmit information between parties as a JSON object. They are commonly used for authentication and authorization, allowing servers to verify the identity of users without storing session data."
+    },
+    {
+      "id": 91,
+      "question": "What is the purpose of JWT (JSON Web Tokens) in authentication?",
+      "options": [
+        "To handle frontend rendering",
+        "To encrypt database connections",
+        "To optimize server performance",
+        "To securely transmit information between parties as a JSON object"
+      ],
+      "correctAnswer": "To securely transmit information between parties as a JSON object",
+      "explanation": "JWT is used to securely transmit information between parties as a JSON object, often for authentication and authorization."
+    },
+    {
+      "id": 92,
+      "question": "What is the purpose of hashing in password storage?",
+      "options": [
+        "To securely store passwords by converting them into irreversible hashes",
+        "To encrypt database connections",
+        "To optimize server performance",
+        "To handle frontend rendering"
+      ],
+      "correctAnswer": "To securely store passwords by converting them into irreversible hashes",
+      "explanation": "Hashing converts passwords into irreversible hashes, making it difficult for attackers to retrieve the original password."
+    },
+    {
+      "id": 93,
+      "question": "What is the purpose of salting in password hashing?",
+      "options": [
+        "To optimize server performance",
+        "To encrypt database connections",
+        "To add random data to passwords before hashing to prevent rainbow table attacks",
+        "To handle frontend rendering"
+      ],
+      "correctAnswer": "To add random data to passwords before hashing to prevent rainbow table attacks",
+      "explanation": "Salting adds random data to passwords before hashing, making it harder for attackers to use precomputed rainbow tables."
+    },
+    {
+      "id": 94,
+      "question": "What is the purpose of HTTPS in backend security?",
+      "options": [
+        "To define the API version",
+        "To authenticate the user",
+        "To handle database connections",
+        "To encrypt data transmitted between the client and server"
+      ],
+      "correctAnswer": "To encrypt data transmitted between the client and server",
+      "explanation": "HTTPS encrypts data transmitted between the client and server, preventing eavesdropping and tampering."
+    },
+    {
+      "id": 95,
+      "question": "What is the purpose of CSRF tokens in web security?",
+      "options": [
+        "To optimize server performance",
+        "To handle frontend rendering",
+        "To prevent cross-site request forgery attacks",
+        "To encrypt database connections"
+      ],
+      "correctAnswer": "To prevent cross-site request forgery attacks",
+      "explanation": "CSRF tokens prevent cross-site request forgery attacks by ensuring that requests originate from the same site."
+    },
+    {
+      "id": 96,
+      "question": "What is the purpose of blue-green deployment?",
+      "options": [
+        "To optimize frontend rendering",
+        "To reduce downtime and risk by running two identical production environments",
+        "To handle database queries",
+        "To manage user authentication"
+      ],
+      "correctAnswer": "To reduce downtime and risk by running two identical production environments",
+      "explanation": "Blue-green deployment reduces downtime and risk by running two identical production environments and switching between them."
+    },
+    {
+      "id": 97,
+      "question": "What is the purpose of canary deployment?",
+      "options": [
+        "To roll out changes to a small subset of users before full deployment",
+        "To manage user authentication",
+        "To handle database queries",
+        "To optimize frontend rendering"
+      ],
+      "correctAnswer": "To roll out changes to a small subset of users before full deployment",
+      "explanation": "Canary deployment rolls out changes to a small subset of users before full deployment, allowing for testing and monitoring."
+    },
+    {
+      "id": 98,
+      "question": "What is the purpose of a load balancer in deployment?",
+      "options": [
+        "To optimize frontend rendering",
+        "To handle database queries",
+        "To distribute incoming requests across multiple servers",
+        "To manage user authentication"
+      ],
+      "correctAnswer": "To distribute incoming requests across multiple servers",
+      "explanation": "A load balancer distributes incoming requests across multiple servers to improve performance and reliability."
+    },
+    {
+      "id": 99,
+      "question": "What is the purpose of a reverse proxy in deployment?",
+      "options": [
+        "To handle database queries",
+        "To manage user authentication",
+        "To route requests to the appropriate backend server",
+        "To optimize frontend rendering"
+      ],
+      "correctAnswer": "To route requests to the appropriate backend server",
+      "explanation": "A reverse proxy routes requests to the appropriate backend server, improving scalability and security."
+    },
+    {
+      "id": 100,
+      "question": "What is the purpose of environment variables in deployment?",
+      "options": [
+        "To optimize frontend rendering",
+        "To store configuration data like API keys and database credentials",
+        "To manage user authentication",
+        "To handle database queries"
+      ],
+      "correctAnswer": "To store configuration data like API keys and database credentials",
+      "explanation": "Environment variables store configuration data, making it easier to manage and secure during deployment."
+    }
+  ]
+}

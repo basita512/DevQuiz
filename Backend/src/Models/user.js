@@ -7,6 +7,11 @@ const userSchema = new mongoose.Schema({
         min : 3
     },
 
+    selectedCategory : {
+        type : String,
+        required : true,
+    },
+
     score : {
         type : Number,
         default : 0
