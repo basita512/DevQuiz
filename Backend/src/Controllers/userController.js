@@ -1,4 +1,5 @@
 const User = require('../Models/user')
+const zod = require('zod')
 
 const userDetails = zod.object({
     name : zod.string().min(3),
