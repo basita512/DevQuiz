@@ -11,7 +11,7 @@ app.use(cors())
 app.use(express.json())
 connectDB()
 
-app.use('/app/user', userRoutes)
+app.use('/api/user', userRoutes)
 app.use('/api/quiz', quizRoutes)
 app.use('/api/result', LeaderboardRoutes)
 

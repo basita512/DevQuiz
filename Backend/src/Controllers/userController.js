@@ -3,16 +3,25 @@ const zod = require('zod')
 
 const userDetails = zod.object({
     name : zod.string().min(3),
-    category : zod.string()
+    selectedCategory : zod.string()
 })
 
 const startQuiz = async (req, res) => {
     try {
-        const response = userDetails.safeParse(req.body)
+        const response = userDetails.safeParse({
+            name : req.body.name,
+            selectedCategory : req.body.selectedCategory
+        })
+        if (!response.success) {
+            return res.status(400).json({
+                message : 'Invalid request body',
+                error : response.error.message
+            })
+        }
         
         //Existing user check
         const existingUser = await User.findOne({
-            name : req.body.username
+            name : req.body.name
         })
         if (existingUser) {
             return res.status(411).json({
@@ -22,19 +31,20 @@ const startQuiz = async (req, res) => {
 
         //If new user
         const user = await User.create({
-            name : req.body.username,
-            category : req.body.category
+            name : req.body.name,
+            selectedCategory : req.body.selectedCategory
         })
         const userId = user._id
-
-        res.status(500).json({
+        console.log(userId)
+        res.status(200).json({
             userId
         })
 
     } catch (error) {
-        console.error('login erroe:', error)
+        console.error('login error:', error)
         res.status(500).json({
-            message : 'Internal server error'
+            message : 'Internal server error',
+            error : error.message
         })
     }
 }
