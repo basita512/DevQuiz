@@ -2,6 +2,8 @@ const express = require('express')
 const FrontendQuiz = require('../Models/quiz')
 const BackendQuiz = require('../Models/quiz')
 
+//-------------------------Gets questions of selected category ---------------------------
+
 const askedQuestions = new Map()
 
 const getCategoryquestions = async (req, res) => {
@@ -70,12 +72,48 @@ const getCategoryquestions = async (req, res) => {
     }
 }
 
-const submitAnswer = async (req, res) => {
-    const { questionId, selectedAnswer } = req.body
 
-    
+//-------------------------------------- Verify the entered option -----------------------------------
+
+const checkAnswer = async (req, res) => {
+    try {
+        const { category } = req.params
+        const { questionId, selectedAnswer } = req.body
+
+        let selectedCategory 
+            if (category === 'frontend') {
+                selectedCategory = FrontendQuiz
+            } else if (category === 'backend') {
+                selectedCategory = BackendQuiz
+            }
+        
+        const askedQues = await selectedCategory.findOne({ id: questionId })
+        if (selectedAnswer === askedQues.correctAnswer) {
+            res.status(200).json({
+                success: true,
+                isCorrect: true,
+                message: 'Correct answer!'
+            })
+        } else {
+            res.status(200).json({
+                success: true,
+                isCorrect: false,
+                message: 'Incorrect answer!',
+                correctAnswer: askedQues.correctAnswer
+            })
+        }
+            
+    } catch (error) {
+        console.error('Error in submitting answer')
+        res.status(500).json({
+            success: false,
+            message: 'Internal Server error',
+            error: error.message
+        })
+
+    } 
 }
 
 module.exports = {
-    getCategoryquestions, submitAnswer
+    getCategoryquestions, checkAnswer
 }

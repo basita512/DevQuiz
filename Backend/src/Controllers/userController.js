@@ -1,27 +1,14 @@
 const User = require('../Models/user')
-const zod = require('zod')
 
-const userDetails = zod.object({
-    name : zod.string().min(3),
-    selectedCategory : zod.string()
-})
+//---------------------------------When user enter details to Start Quiz---------------------------------
 
 const startQuiz = async (req, res) => {
     try {
-        const response = userDetails.safeParse({
-            name : req.body.name,
-            selectedCategory : req.body.selectedCategory
-        })
-        if (!response.success) {
-            return res.status(400).json({
-                message : 'Invalid request body',
-                error : response.error.message
-            })
-        }
+        const { name, selectedCategory } = req.body
         
         //Existing user check
         const existingUser = await User.findOne({
-            name : req.body.name
+            name : name
         })
         if (existingUser) {
             return res.status(411).json({
@@ -31,8 +18,8 @@ const startQuiz = async (req, res) => {
 
         //If new user
         const user = await User.create({
-            name : req.body.name,
-            selectedCategory : req.body.selectedCategory
+            name : name,
+            selectedCategory : selectedCategory
         })
         const userId = user._id
         console.log(userId)
@@ -48,6 +35,10 @@ const startQuiz = async (req, res) => {
         })
     }
 }
+
+
+
+//---------------------------------When user's final score is submitted---------------------------------
 
 const submitScore = async (req, res) => {
     try {

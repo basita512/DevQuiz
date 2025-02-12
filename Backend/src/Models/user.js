@@ -17,10 +17,16 @@ const userSchema = new mongoose.Schema({
         default : 0
     },
 
-    completed : {
-        type : Date,
-        default : Date.now
-    }
+    quizHistory : {
+        questionId : Number,
+        selectedAnswer : String,
+        isCorrect : Boolean,
+        timestamp : {
+            type : Date,
+            default : Date.now
+        }
+    },
+
 })
 
 const User = mongoose.model('User', userSchema)

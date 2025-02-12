@@ -1,8 +1,8 @@
 const express = require('express')
-const { getCategoryquestions, submitAnswer } = require('../Controllers/questionController')
+const { getCategoryquestions, checkAnswer } = require('../Controllers/questionController')
 const router = express.Router()
 
 router.get('/:category/:userId', getCategoryquestions)
-router.post('/submitScore', submitAnswer )
+router.post('/:category/:userId/checkAnswer', checkAnswer )
 
 module.exports = router
