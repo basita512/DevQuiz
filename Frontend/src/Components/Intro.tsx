@@ -1,6 +1,9 @@
+import { useNavigate } from "react-router-dom"
 import Button from "./Button"
 
 const Intro = () => {
+  const navigate = useNavigate()
+
   return (
     <div>
         <h1 className="text-5xl md:text-6xl font-bold text-white text-center leading-tight">
@@ -12,7 +15,9 @@ const Intro = () => {
         </p>
         
         <div className="w-1/5 mt-6 mx-auto">
-            <Button text='Get Started'/>
+            <Button 
+              text='Get Started'
+              onclick={() => navigate('/start')}/>
         </div>
         
     </div>
