@@ -17,7 +17,7 @@ const Intro = () => {
         <div className="w-1/5 mt-6 mx-auto">
             <Button 
               text='Get Started'
-              onclick={() => navigate('/start')}/>
+              onClick={() => navigate('/start')}/>
         </div>
         
     </div>

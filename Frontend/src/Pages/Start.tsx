@@ -1,11 +1,18 @@
-import {  useState } from "react"
 import Button from "../Components/Button"
 import axios from "axios"
+import { AppDispatch, RootState } from "../store"
+import { setCategory, setName } from "../Slices/quizSlice"
+import { useDispatch, useSelector } from "react-redux"
+import { useNavigate } from "react-router-dom"
 
 
 const Start = () => {
-    const [name, setName] = useState('')
-    const [category, setCategory] = useState('frontend')   
+    const dispatch = useDispatch<AppDispatch>()
+    const name = useSelector((state: RootState) => state.quiz.name)
+    const category = useSelector((state: RootState) => state.quiz.category)
+    const navigate = useNavigate()
+  
+     
 
     const handleStart = async () => {
         // event.preventDefault()
@@ -20,7 +27,8 @@ const Start = () => {
                 name : name,
                 category : category
             })
-            
+
+            navigate('/quiz')
 
         } catch (error) {
             console.error('Error starting quiz:', error)
@@ -46,7 +54,7 @@ const Start = () => {
                                 type="radio"
                                 value="frontend"
                                 checked={category === 'frontend'}
-                                onChange={(e) => setCategory(e.target.value)}
+                                onChange={(e) => dispatch(setCategory(e.target.value))}
                                 className="w-5 h-5 accent-pink-400 mr-4"
                             />
                             <span className="text-white text-lg">
@@ -59,7 +67,7 @@ const Start = () => {
                                 type="radio"
                                 value="backend"
                                 checked={category === 'backend'}
-                                onChange={(e) => setCategory(e.target.value)}
+                                onChange={(e) => dispatch(setCategory(e.target.value))}
                                 className="w-5 h-5 accent-pink-400 mr-4"
                             />
                             <span className="text-white text-lg">
@@ -74,7 +82,7 @@ const Start = () => {
                         type="text"
                         placeholder="Enter your name"
                         value={name}
-                        onChange={(e) => setName(e.target.value)}
+                        onChange={(e) => dispatch(setName(e.target.value))}
                         className="w-full px-4 py-3 rounded-lg bg-black  text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-pink-400 focus:border-transparent transition-all"
                     />
                 </div>
@@ -82,7 +90,7 @@ const Start = () => {
                 <div className="flex justify-center">
                     <Button 
                         text="Start Quiz" 
-                        onclick={handleStart}/>
+                        onClick={handleStart}/>
                 </div>
             </div>
         </div>

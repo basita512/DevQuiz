@@ -4,7 +4,7 @@ const User = require('../Models/user')
 
 const startQuiz = async (req, res) => {
     try {
-        const { name, selectedCategory } = req.body
+        const { name, category } = req.body
         
         //Existing user check
         const existingUser = await User.findOne({
@@ -19,7 +19,7 @@ const startQuiz = async (req, res) => {
         //If new user
         const user = await User.create({
             name : name,
-            selectedCategory : selectedCategory
+            selectedCategory : category
         })
         const userId = user._id
         console.log(userId)
