@@ -1,7 +1,7 @@
 import Button from "../Components/Button"
 import axios from "axios"
 import { AppDispatch, RootState } from "../store"
-import { setCategory, setName } from "../Slices/quizSlice"
+import { setCategory, setName, setUserId } from "../Slices/quizSlice"
 import { useDispatch, useSelector } from "react-redux"
 import { useNavigate } from "react-router-dom"
 
@@ -23,10 +23,12 @@ const Start = () => {
                 return
             }
 
-            await axios.post('http://localhost:5000/api/user/start', {
+            const response = await axios.post('http://localhost:5000/api/user/start', {
                 name : name,
                 category : category
             })
+
+            dispatch(setUserId(response.data.userId))
 
             navigate('/quiz')
 
