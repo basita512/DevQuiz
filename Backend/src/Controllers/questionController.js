@@ -9,7 +9,7 @@ const askedQuestions = new Map()
 const getCategoryquestions = async (req, res) => {
     try {
         // 1.Get Parameters
-        const { category, userId } = req.params
+        const { category, userId } = req.params    
        
         // 2.Select Database Model
         let selectedCategory 
@@ -92,14 +92,16 @@ const checkAnswer = async (req, res) => {
             res.status(200).json({
                 success: true,
                 isCorrect: true,
-                message: 'Correct answer!'
+                message: 'Correct answer!',
+                explaination : askedQues.explaination
             })
         } else {
             res.status(200).json({
                 success: true,
-                isCorrect: false,
+                isCorrect: false, 
                 message: 'Incorrect answer!',
-                correctAnswer: askedQues.correctAnswer
+                correctAnswer: askedQues.correctAnswer,
+                explaination : askedQues.explaination
             })
         }
             

@@ -21,12 +21,12 @@ const quizSchema = new mongoose.Schema({
         required : true
     },
 
-    explaination : {
-        type : String
+    explanation : {
+        type : String,
+        required : true
     }
-
 })
 
 const FrontendQuiz = mongoose.model('FrontendQuiz', quizSchema)
 const BackendQuiz = mongoose.model('BackendQuiz', quizSchema)
-module.exports = FrontendQuiz, BackendQuiz
+module.exports = {FrontendQuiz, BackendQuiz}
