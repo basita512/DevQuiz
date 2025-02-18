@@ -1,15 +1,16 @@
 import Button from "../Components/Button"
 import axios from "axios"
 import { AppDispatch, RootState } from "../store"
-import { setCategory, setName, setUserId } from "../Slices/quizSlice"
+import { setCategory, setName, setErrorMessage, setUserId } from "../Slices/quizSlice"
 import { useDispatch, useSelector } from "react-redux"
 import { useNavigate } from "react-router-dom"
-
-
+import { resetQuiz } from "../Slices/quizSlice"
+import ApiError from "../Components/ApiError"
 const Start = () => {
     const dispatch = useDispatch<AppDispatch>()
     const name = useSelector((state: RootState) => state.quiz.name)
     const category = useSelector((state: RootState) => state.quiz.category)
+    const errorMessage = useSelector((state: RootState) => state.quiz.errorMessage)
     const navigate = useNavigate()
   
      
@@ -22,19 +23,39 @@ const Start = () => {
                 alert('Please enter your name')
                 return
             }
-
+            // console.log(name, category)
             const response = await axios.post('http://localhost:5000/api/user/start', {
-                name : name,
-                category : category
+                name: name,
+                category: category,
             })
 
-            dispatch(setUserId(response.data.userId))
+            if (!response.data.success) {
+                dispatch(setErrorMessage(response.data.message))
+                return
+            }
 
-            navigate('/quiz')
 
-        } catch (error) {
+            if (response.data.success && response.data.userId) {  
+                // Reset quiz state for new user
+                dispatch(resetQuiz())
+                
+                dispatch(setUserId(response.data.userId))
+                dispatch(setCategory(category))
+                dispatch(setName(name))
+                
+                navigate('/quiz')
+            } else {
+                alert('Failed to start quiz. Please try again.')
+            }
+
+        } catch (error: any) {
             console.error('Error starting quiz:', error)
             alert('An error occurred while starting the quiz. Please try again.')
+            const errorMessage = error.response?.data?.message 
+                || error.response?.data?.error 
+                || error.message 
+                || 'An error occurred while starting the quiz. Please try again.'
+            alert(errorMessage)
         }
     }
 
@@ -44,6 +65,10 @@ const Start = () => {
                 <h1 className="text-3xl font-bold mb-8 text-white text-center">
                     Let's get started
                 </h1>
+
+                {errorMessage && (
+                    <ApiError errorMessage={errorMessage} />
+                )}
 
                 <div className="mb-8">
                     <p className="text-lg font-medium text-white mb-4">

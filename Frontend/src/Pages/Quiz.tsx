@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom"
 import { RootState } from '../store'
 import { useEffect, useState } from "react"
 import axios from "axios"
-import { increamentScore, setCurrentQuestion } from "../Slices/quizSlice"
+import { increamentScore, setCurrentQuestion, setRemainingQuestion } from "../Slices/quizSlice"
 import Button from "../Components/Button"
 
 interface Question {
@@ -40,65 +40,78 @@ const Quiz = () => {
         feedback : null
     })
 
+    // Debug log
+    useEffect(() => {
+        console.log('Quiz component state:', {
+            category,
+            userId,
+            currentQuestion,
+            remainingQuestion
+        })
+    }, [category, userId, currentQuestion, remainingQuestion])
+
     useEffect(() => {
         const fetchQuestion = async () => {
+            if (!userId) {
+                console.error('User ID is not available')
+                return
+            } 
+
             try {
+                console.log('Fetching the params', {category, userId, currentQuestion})
                 const response = await axios.get(`http://localhost:5000/api/quiz/${category}/${userId}/question/${currentQuestion}`)
-                setQuizState((prev) => ({
-                    ...prev,
-                    question: response.data,
-                    selectedOption: '',
-                    isAnswered : false,
-                    feedback: null
-                }))
+                if (response.data.success) {
+                    setQuizState((prev) => ({
+                        ...prev,
+                        question: response.data.question,
+                        selectedOption: '',
+                        isAnswered: false,
+                        feedback: null
+                    }))
+                    dispatch(setRemainingQuestion(response.data.remainingQuestions))
+                }
             } catch (error) {
                 console.error('Error fetching questions: ', error)
             }
-            
         }
         fetchQuestion()
-    }, [currentQuestion, category, userId])
+    }, [currentQuestion, category, userId, dispatch])
 
 
     const handleVerifyAnswer = async (option : string) => {
         try {
-            if (quizState.feedback || !quizState.question){
-                return
-            }
-
-            setQuizState((prev) => ({
-                ...prev,
-                selectedOption : option,
-                isAnswered : true
-            }))
-
-            const response = await axios.post(`http://localhost:5000/api/quiz/${category}/${userId}/checkAnswer`, {
-                questionId : quizState.question.id,
-                selectedAnswer : option
-            })
-
-            setQuizState((prev) => ({
-                ...prev,
-                feedback : {
-                    isCorrect : response.data.isCorrect,
-                    message : response.data.message,
-                    correctAnswer : response.data.correctAnswer,
-                    explanation : response.data.explanation
+            const response = await axios.post(
+                `http://localhost:5000/api/quiz/${category}/${userId}/checkAnswer`,
+                {
+                    questionId: quizState.question?.id,
+                    selectedAnswer: option
                 }
-            }))
+            )
+
+            if (response.data.success) {
+                setQuizState(prev => ({
+                    ...prev,
+                    selectedOption: option,
+                    isAnswered: true,
+                    feedback: {
+                        isCorrect: response.data.isCorrect,
+                        message: response.data.message,
+                        correctAnswer: response.data.correctAnswer,
+                        explanation: response.data.explanation
+                    }
+                }))
 
             if(response.data.isCorrect) {
                 dispatch(increamentScore())
             }
-
+          } 
         } catch (error) {
-            console.error('Error in verifying answer', error)
-        }
-    }
-
+          console.error('Error in verifying answer', error)
+      }
+    } 
 
     const handleNext = () => {
-        if (remainingQuestion === 0) {
+        if (currentQuestion === 9) {
             navigate('/result')
         } else {
             dispatch(setCurrentQuestion(currentQuestion + 1))
@@ -138,11 +151,24 @@ const Quiz = () => {
                 </div>
                 
                 {quizState.isAnswered && (
-                    <div className="mt-6 flex justify-center">
-                        <Button
-                            text={remainingQuestion === 0 ? "See Results" : "Next Question"}
-                            onClick={handleNext}
-                        />
+                    <div className="mt-6">
+                        <div className={`p-4 rounded-lg mb-4 ${
+                            quizState.feedback?.isCorrect ? 'bg-green-500/10' : 'bg-red-500/10'}`}>
+                            <p className="text-white mb-2">
+                              {quizState.feedback?.message}
+                            </p>
+                            {quizState.feedback?.explanation && (
+                                <p className="text-gray-400 text-sm">
+                                  {quizState.feedback.explanation}
+                                </p>
+                            )}
+                        </div>
+                        <div className="flex justify-center items-center">
+                            <Button
+                                text={currentQuestion === 9 ? "See Results" : "Next Question"}
+                                onClick={handleNext}
+                            />  
+                        </div>
                     </div>
                 )}
 
