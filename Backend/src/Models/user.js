@@ -10,6 +10,7 @@ const userSchema = new mongoose.Schema({
     selectedCategory : {
         type : String,
         required : true,
+        enum : ['frontend', 'backend']
     },
 
     score : {
@@ -18,13 +19,16 @@ const userSchema = new mongoose.Schema({
     },
 
     quizHistory : {
-        questionId : Number,
-        selectedAnswer : String,
-        isCorrect : Boolean,
-        timestamp : {
-            type : Date,
-            default : Date.now
-        }
+        type : [{
+            questionId : Number,
+            selectedAnswer : String,
+            isCorrect : Boolean,
+            timestamp : {
+                type : Date,
+                default : Date.now
+            }
+        }],
+        default : []
     },
 
 })
