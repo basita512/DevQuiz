@@ -11,7 +11,8 @@ const startQuiz = async (req, res) => {
             name : name
         })
         if (existingUser) {
-            return res.status(411).json({
+            return res.status(409).json({
+                success : false,
                 message : 'User belonging to this username already exists. Please try different username'
             })
         }
@@ -23,15 +24,17 @@ const startQuiz = async (req, res) => {
         })
         const userId = user._id
         console.log(userId)
-        res.status(200).json({
-            userId
+        res.status(200).json({      
+            success : true,
+            userId : userId.toString()
         })
 
     } catch (error) {
         console.error('login error:', error)
         res.status(500).json({
+            success : false,
             message : 'Internal server error',
-            error : error.message
+            error : error.message,
         })
     }
 }

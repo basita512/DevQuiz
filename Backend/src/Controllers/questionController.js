@@ -1,6 +1,5 @@
-const express = require('express')
-const FrontendQuiz = require('../Models/quiz')
-const BackendQuiz = require('../Models/quiz')
+const { FrontendQuiz, BackendQuiz } = require('../Models/quiz')
+const User = require('../Models/user')  
 
 //-------------------------Gets questions of selected category ---------------------------
 
@@ -9,7 +8,8 @@ const askedQuestions = new Map()
 const getCategoryquestions = async (req, res) => {
     try {
         // 1.Get Parameters
-        const { category, userId } = req.params    
+        const { category, userId } = req.params
+        console.log(category, userId) 
        
         // 2.Select Database Model
         let selectedCategory 
@@ -50,6 +50,7 @@ const getCategoryquestions = async (req, res) => {
         userAskedQuestions.add(selectedQuestion.id)
         if (userAskedQuestions.size >= 10) {
             userAskedQuestions.clear()
+            askedQuestions.delete(userId)
         }
         res.status(200).json({
             success : true,
@@ -77,43 +78,51 @@ const getCategoryquestions = async (req, res) => {
 
 const checkAnswer = async (req, res) => {
     try {
-        const { category } = req.params
+        const { category, userId } = req.params
         const { questionId, selectedAnswer } = req.body
 
         let selectedCategory 
-            if (category === 'frontend') {
-                selectedCategory = FrontendQuiz
-            } else if (category === 'backend') {
-                selectedCategory = BackendQuiz
-            }
+        if (category === 'frontend') {
+            selectedCategory = FrontendQuiz
+        } else if (category === 'backend') {
+            selectedCategory = BackendQuiz
+        }
         
         const askedQues = await selectedCategory.findOne({ id: questionId })
-        if (selectedAnswer === askedQues.correctAnswer) {
-            res.status(200).json({
-                success: true,
-                isCorrect: true,
-                message: 'Correct answer!',
-                explaination : askedQues.explaination
-            })
-        } else {
-            res.status(200).json({
-                success: true,
-                isCorrect: false, 
-                message: 'Incorrect answer!',
-                correctAnswer: askedQues.correctAnswer,
-                explaination : askedQues.explaination
-            })
-        }
-            
+        const isCorrect = selectedAnswer === askedQues.correctAnswer
+
+        // Update user's quiz history
+        await User.findByIdAndUpdate(
+            userId,
+            {
+                $push: {
+                    quizHistory: {
+                        questionId,
+                        selectedAnswer,
+                        isCorrect
+                    }
+                }
+            },
+            { new: true }
+        )
+
+        // Send response
+        res.status(200).json({
+            success: true,
+            isCorrect,
+            message: isCorrect ? 'Correct answer!' : 'Incorrect answer.',
+            correctAnswer: isCorrect ? undefined : askedQues.correctAnswer,
+            explanation: askedQues.explanation
+        })
+
     } catch (error) {
-        console.error('Error in submitting answer')
+        console.error('Error checking answer:', error)
         res.status(500).json({
             success: false,
             message: 'Internal Server error',
             error: error.message
         })
-
-    } 
+    }
 }
 
 module.exports = {
