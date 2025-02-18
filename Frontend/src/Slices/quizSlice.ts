@@ -8,7 +8,8 @@ interface QuizState {
     score : number,
     userId : string,
     currentQuestion : number,
-    remainingQuestion : number
+    remainingQuestion : number,
+    errorMessage : string
 }
 
 // Initializing state
@@ -18,7 +19,8 @@ const initialState : QuizState = {
     score : 0,
     userId : '',
     currentQuestion : 0,
-    remainingQuestion : 10
+    remainingQuestion : 10,
+    errorMessage : ''
 }
 
 const quizSlice = createSlice({
@@ -46,7 +48,10 @@ const quizSlice = createSlice({
         setRemainingQuestion : (state, action : PayloadAction<number>) => {
             state.remainingQuestion = action.payload
         },
-        resSetQuiz : () => {
+        setErrorMessage : (state, action : PayloadAction<string>) => {
+            state.errorMessage = action.payload
+        },
+        resetQuiz : () => {
             return initialState
         }
     }
@@ -60,7 +65,8 @@ export const {
     setScore,
     increamentScore,
     setUserId,
-    resSetQuiz
+    setErrorMessage,
+    resetQuiz  
 } = quizSlice.actions
 
 export default quizSlice.reducer
